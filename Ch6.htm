@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Chapter 6</title>
+</head>
+<!-- index.html -->
+<meta charset="utf-8">
+ <body>
+  <div data-layer="Rectangle 8" class="Rectangle8" style="width: 100%; min-width: 1440px; height: 80px; left: 0px; top: 0px; position: absolute; background: #EEEFFE"></div>
+    <style>
+  a:hover { color: #000066; }
+  label:hover { color: #000066; }
+
+  .nav-link {
+    position: absolute;
+    color: #4A3EFE;
+    font-size: 24px;
+    font-family: Tajawal, sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    left: -50px;
+    top: -16px;
+    z-index: 1000;
+  }
+
+  .nav-container {
+    position: relative;
+  }
+
+  .dropdown {
+    position: absolute;
+    top: 38px;
+    left: 1340px;
+    cursor: pointer;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .dropdown-label {
+    color: #4A3EFE;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: Tajawal, sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    position: relative;
+    z-index: 1000;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1001;
+    min-width: 160px;
+  }
+
+  #menu-toggle:checked + .dropdown-label + .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    display: block;
+    padding: 8px 12px;
+    font-size: 18px;
+    color: #4A3EFE;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #EEEFFE;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  #menu-toggle:checked ~ .overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+  }
+</style>
+
+<div data-layer="Nav" class="nav-link" style="position: relative;min-width: 1440px;">
+  <a href="Home.htm" class="nav-link" style="left: 506px;top: 38px;">HOME</a>
+  <a href="About_Me.htm" class="nav-link" style="left: 601.71px;top: 38px;">ABOUT ME</a>
+  <a href="About_My_Neighberhood.htm" class="nav-link" style="left: 742.76px;top: 38px;">MY NEIGHBORHOOD</a>
+  <a href="About_My_University.htm" class="nav-link" style="left: 983.55px;top: 38px;">MY UNIVERSITY</a>
+  <a href="Contact_me.htm" class="nav-link" style="left: 1176.99px; top: 38px;">CONTACT ME</a>
+
+  <div class="dropdown nav-link">
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="dropdown-label">OTHERS</label>
+
+    <div class="dropdown-content">
+      <a href="Ch6.htm">Chapter 6</a>
+      <a href="Ch7.htm">Chapter 7</a>
+      <a href="Ch8.htm">Chapter 8</a>
+      <a href="Ch9.htm">Chapter 9</a>
+      <a href="Ch10.htm">Chapter 10</a>
+    </div>
+
+    <label for="menu-toggle" class="overlay"></label>
+  </div>
+</div>
+
+
+    <div data-layer="Rectangle 5" class="Rectangle5" style="width: 225px; height: 42px; left: 127px; top: 20px; position: absolute; background: #4A3EFE; box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36); border-radius: 5px"></div>
+    <div data-layer="ZAIN WEBSITE" class="ZainWebsite" style="height: 34px; left: 140px; top: 18px; position: absolute; text-align: center; color: white; font-size: 32px; font-family: Tajawal; font-weight: 900; line-height: 48px; word-wrap: break-word">ZAIN WEBSITE</div>
+
+   <iframe src="6.1.htm" width="100%" height="667px" style=" margin-top: 80px;"></iframe>
+
+   <iframe src="6.2.htm" width="100%" height="200px"></iframe>
+   
+   <iframe src="6.3.htm" width="100%" height="570.99px"></iframe>
+   
+   <iframe src="6.4.htm" width="100%" height="640px"></iframe>
+
+   <iframe src="6.5.htm" width="100%" height="640px"></iframe>
+
+   <iframe src="6.6.htm" width="100%" height="580px"></iframe>
+   
+   <iframe src="6.7.htm" width="100%" height="610px"></iframe>
+   
+   <iframe src="6.8.htm" width="100%" height="610px"></iframe>
+   
+   <iframe src="6.9.htm" width="100%" height="610px"></iframe>
+   
+   <iframe src="6.10_Linear.htm" width="100%" height="610px"></iframe>
+   
+   <iframe src="6.10_Radial.htm" width="100%" height="610px"></iframe>
+
+
+</body>
+
+</html>

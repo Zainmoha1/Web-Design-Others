@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About My Neighberhood</title>
+</head>
+<body>
+  
+<div data-layer="Desktop -3" class="Desktop3" style=" width: 1440px; height: 2880px;  position: relative; margin-right:auto; margin-left: auto; background: white; overflow: hidden">
+    <div data-layer="Rectangle 20" class="Rectangle20" style="width: 1480px; height: 749px; left: 0px; top: 0px; position: absolute; background: linear-gradient(270deg, #F073DA 0%, #4A3EFE 100%)"></div>
+    
+  <img data-layer="Rectangle 2" class="Rectangle2" style="width: 511px; height: 508px; left: 901px; top: 168px; position: absolute" src="deg-01.png" />
+  <div data-layer="Rectangle 1" class="Rectangle1" style="width: 1440px; height: 111px; left: 0px; top: 638px; position: absolute; background: linear-gradient(180deg, rgba(234, 113, 219, 0) 0%, rgba(234, 113, 219, 0.48) 100%)"></div>
+  <div data-layer="Rectangle 1" class="Rectangle1" style="width: 749px; height: 1440px; left: 1440px; top: 0px; position: absolute; transform: rotate(90deg); transform-origin: top left; background: linear-gradient(180deg, rgba(74, 62, 254, 0) 43%, #4A3EFE 90%)"></div>
+  <div data-layer="Hi, I’m from Suuq Yaraha —   a vibrant neighborhood in Dherkenley,   where community thrives,   faith is strong,   and local markets tell stories   of everyday life." class="HiIMFromSuuqYarahaAVibrantNeighborhoodInDherkenleyWhereCommunityThrivesFaithIsStrongAndLocalMarketsTellStoriesOfEverydayLife" style="left: 77px; top: 200px; position: absolute; color: white; font-size: 45px; font-family: sans-serif; font-weight: 700; word-wrap: break-word">Hi, I’m from Suuq Yaraha —  <br>  a vibrant neighborhood in Dherkenley, <br>  where community thrives, <br>  faith is strong, <br>  and local markets tell stories <br> of everyday life.</div>
+  <div data-layer="Rectangle 6" class="Rectangle6" style="width: 140px; height: 45px; left: 77px; top: 540px; position: absolute; opacity: 0.21; background: rgba(217, 217, 217, 0.70); box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36); border-radius: 22.50px"></div>
+  <a href="About_Me.htm"><div data-layer="About Me" class="AboutMe" style="width: 94px; height: 25px; left: 100px; top: 550px; position: absolute; color: white; font-size: 20px; font-family: sans-serif; font-weight: 500; word-wrap: break-word">About Me</div></a>
+  <div data-layer="Rectangle 6" class="Rectangle6" style="width: 140px; height: 45px; left: 226px; top: 540px; position: absolute; opacity: 0.21; background: rgba(217, 217, 217, 0.70); box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36); border-radius: 22.50px"></div>
+  <a href="Contact_me.htm"><div data-layer="Contact Me" class="ContactMe" style="width: 113px; height: 25px; left: 239px; top: 550px; position: absolute; color: white; font-size: 20px; font-family: sans-serif; font-weight: 500; word-wrap: break-word">Contact Me</div></a>
+  <div data-layer="Rectangle 8" class="Rectangle8" style="width: 1622px; height: 80px; left: -91px; top: -8px; position: absolute; background: #EEEFFE"></div>
+<style>
+  a:hover { color: #000066; }
+  label:hover { color: #000066; }
+
+  .nav-link {
+    position: absolute;
+    color: #4A3EFE;
+    font-size: 24px;
+    font-family: Tajawal, sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    left: -50px;
+    top: -16px;
+    z-index: 1000;
+  }
+
+  .nav-container {
+    position: relative;
+  }
+
+  .dropdown {
+    position: absolute;
+    top: 38px;
+    left: 1340px;
+    cursor: pointer;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .dropdown-label {
+    color: #4A3EFE;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: Tajawal, sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    position: relative;
+    z-index: 1000;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1001;
+    min-width: 160px;
+  }
+
+  #menu-toggle:checked + .dropdown-label + .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    display: block;
+    padding: 8px 12px;
+    font-size: 18px;
+    color: #4A3EFE;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #EEEFFE;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  #menu-toggle:checked ~ .overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+  }
+</style>
+
+<div data-layer="Nav" class="nav-link" style="position: relative;">
+  <a href="Home.htm" class="nav-link" style="left: 506px;top: 38px;">HOME</a>
+  <a href="About_Me.htm" class="nav-link" style="left: 601.71px;top: 38px;">ABOUT ME</a>
+  <a href="About_My_Neighberhood.htm" class="nav-link" style="left: 742.76px;top: 38px;">MY NEIGHBORHOOD</a>
+  <a href="About_My_University.htm" class="nav-link" style="left: 983.55px;top: 38px;">MY UNIVERSITY</a>
+  <a href="Contact_me.htm" class="nav-link" style="left: 1176.99px; top: 38px;">CONTACT ME</a>
+
+  <div class="dropdown nav-link">
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="dropdown-label">OTHERS</label>
+
+    <div class="dropdown-content">
+      <a href="Ch6.htm">Chapter 6</a>
+      <a href="Ch7.htm">Chapter 7</a>
+      <a href="Ch8.htm">Chapter 8</a>
+      <a href="Ch9.htm">Chapter 9</a>
+      <a href="Ch10.htm">Chapter 10</a>
+    </div>
+
+    <label for="menu-toggle" class="overlay"></label>
+  </div>
+</div>  <div data-layer="Rectangle 5" class="Rectangle5" style="width: 225px; height: 42px; left: 127px; top: 15px; position: absolute; background: #4A3EFE; box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36); border-radius: 5px"></div>
+  <div data-layer="ZAIN WEBSITE" class="ZainWebsite" style=" height: 34px; left: 140px; top: 13px; position: absolute; text-align: center; color: white; font-size: 32px; font-family: Tajawal; font-weight: 900; line-height: 48px; word-wrap: break-word">ZAIN WEBSITE</div>
+  <div data-layer="66" style="width: 1504px; height: 812px; left: -30px; top: 700px; position: absolute; background: rgba(255, 255, 255, 0)"></div>
+  <div data-layer="Rectangle 7" class="Rectangle7" style="width: 1266px; height: 491px; left: 70px; top: 839px; position: absolute; background: #EEEFFE; border-radius: 21px"></div>
+  <div data-layer="Rectangle 8" class="Rectangle8" style="width: 370px; height: 377px; left: 919px; top: 865px; position: absolute; background: #E6E8FF; border-radius: 21px"></div>
+  <img data-layer="Rectangle 9" class="Rectangle9" style="width: 370px; height: 377px; left: 929px; top: 865px; position: absolute; mix-blend-mode: darken; border-radius: 21px; border: 1px #4A3EFE solid" src="deg-01.png" />
+  <div data-layer="Dherkeynley District" class="DherkeynleyDistrict" style="width: 233px; height: 32px; left: 1001px; top: 1269px; position: absolute; color: #4A3EFE; font-size: 20px; font-family: Lato; font-weight: 800; line-height: 24px; word-wrap: break-word">Dherkeynley District</div>
+  <div data-layer="Suuq Yaraha" class="SuuqYaraha" style="width: 152px; height: 26px; left: 1042px; top: 1289px; position: absolute; color: #EF73DA; font-size: 20px; font-family: Lato; font-weight: 300; line-height: 24px; word-wrap: break-word">Suuq Yaraha</div>
+  <div data-layer="Suuq Yaraha is a lively and growing neighborhood located in the heart of Dherkenley District, Mogadishu. Known for its strong sense of community, this area blends traditional Somali life with modern development. The streets are always filled with movement — from children playing to families shopping and neighbors chatting. It’s a place where people know each other, help one another, and share both joy and challenges together. Religious and cultural life is strong here. The mosques are always active, especially during prayer times and Islamic events, bringing the community closer with shared values and traditions." class="SuuqYarahaIsALivelyAndGrowingNeighborhoodLocatedInTheHeartOfDherkenleyDistrictMogadishuKnownForItsStrongSenseOfCommunityThisAreaBlendsTraditionalSomaliLifeWithModernDevelopmentTheStreetsAreAlwaysFilledWithMovementFromChildrenPlayingToFamiliesShoppingAndNeighborsChattingItSAPlaceWherePeopleKnowEachOtherHelpOneAnotherAndShareBothJoyAndChallengesTogetherReligiousAndCulturalLifeIsStrongHereTheMosquesAreAlwaysActiveEspeciallyDuringPrayerTimesAndIslamicEventsBringingTheCommunityCloserWithSharedValuesAndTraditions" style="width: 773px; height: 269px; left: 100px; top: 948px; position: absolute"><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">Suuq Yaraha</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word"> is a lively and growing neighborhood located in the heart of </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">Dherkenley District</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word">, Mogadishu. Known for its </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">strong sense of community</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word">, this area blends </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">traditional Somali life</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word"> with </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">modern development</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word">.<br/></span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word"><br/></span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word">The streets are always filled with movement — from </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">children playing</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word"> to </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">families shopping</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word"> and </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">neighbors chatting</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word">. It’s a place where </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">people know each other</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word">, </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">help one another</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word">, and </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">share both joy </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word">and </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">challenges together</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word">.<br/></span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word"><br/></span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">Religious and cultural life</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word"> is strong here. </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">The mosques </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word">are always active, especially during </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">prayer times</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word"> and </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">Islamic events</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word">, bringing the community closer with </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">shared values and traditions</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word">.<br/></span></div>
+  <div data-layer="My Neighbourhood" class="MyNeighbourhood" style="left: 147px; top: 896px; position: absolute"><span style="color: #4A3EFE; font-size: 28px; font-family: Lato; font-weight: 900; line-height: 33.60px; word-wrap: break-word">My </span><span style="color: #F073DA; font-size: 28px; font-family: Lato; font-weight: 900; line-height: 33.60px; word-wrap: break-word">Neighbourhood</span></div>
+  <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 110px; top: 902px; position: absolute">
+    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12.5 25C10.7708 25 9.14583 24.6719 7.625 24.0156C6.10417 23.3594 4.78125 22.4688 3.65625 21.3438C2.53125 20.2188 1.64062 18.8958 0.984375 17.375C0.328125 15.8542 0 14.2292 0 12.5C0 10.7708 0.328125 9.14583 0.984375 7.625C1.64062 6.10417 2.53125 4.78125 3.65625 3.65625C4.78125 2.53125 6.10417 1.64062 7.625 0.984375C9.14583 0.328125 10.7708 0 12.5 0C14.2292 0 15.8542 0.328125 17.375 0.984375C18.8958 1.64062 20.2188 2.53125 21.3438 3.65625C22.4688 4.78125 23.3594 6.10417 24.0156 7.625C24.6719 9.14583 25 10.7708 25 12.5C25 14.2292 24.6719 15.8542 24.0156 17.375C23.3594 18.8958 22.4688 20.2188 21.3438 21.3438C20.2188 22.4688 18.8958 23.3594 17.375 24.0156C15.8542 24.6719 14.2292 25 12.5 25ZM12.5 22.5C15.2917 22.5 17.6562 21.5312 19.5938 19.5938C21.5312 17.6562 22.5 15.2917 22.5 12.5C22.5 12.3542 22.4948 12.2031 22.4844 12.0469C22.474 11.8906 22.4688 11.7604 22.4688 11.6562C22.3646 12.2604 22.0833 12.7604 21.625 13.1562C21.1667 13.5521 20.625 13.75 20 13.75H17.5C16.8125 13.75 16.224 13.5052 15.7344 13.0156C15.2448 12.526 15 11.9375 15 11.25V10H10V7.5C10 6.8125 10.2448 6.22396 10.7344 5.73438C11.224 5.24479 11.8125 5 12.5 5H13.75C13.75 4.52083 13.8802 4.09896 14.1406 3.73438C14.401 3.36979 14.7188 3.07292 15.0938 2.84375C14.6771 2.73958 14.2552 2.65625 13.8281 2.59375C13.401 2.53125 12.9583 2.5 12.5 2.5C9.70833 2.5 7.34375 3.46875 5.40625 5.40625C3.46875 7.34375 2.5 9.70833 2.5 12.5H8.75C10.125 12.5 11.3021 12.9896 12.2812 13.9688C13.2604 14.9479 13.75 16.125 13.75 17.5V18.75H10V22.1875C10.4167 22.2917 10.8281 22.3698 11.2344 22.4219C11.6406 22.474 12.0625 22.5 12.5 22.5Z" fill="url(#paint0_linear_1_307)"/>
+    <defs>
+    <linearGradient id="paint0_linear_1_307" x1="12.5" y1="0" x2="12.5" y2="25" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#4A3EFE"/>
+    <stop offset="1" stop-color="#F073DA"/>
+    </linearGradient>
+    </defs>
+    </svg>
+  </div>
+  <div data-layer="Rectangle 1009" class="Rectangle1009" style="width: 590px; height: 499px; left: 45px; top: 1438px; position: absolute; background: #EEEFFE; box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.40); border-radius: 27px; border: 1px #4A3EFE solid"></div>
+  <div data-layer="Community & Lifestyle" class="CommunityLifestyle" style="left: 217px; top: 1465px; position: absolute; color: #4A3EFE; font-size: 28px; font-family: Lato; font-weight: 900; line-height: 33.60px; word-wrap: break-word">Community & Lifestyle</div>
+  <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 177px; top: 1469px; position: absolute">
+    <svg width="28" height="24" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M11.2 24.0001V15.5295H16.8V24.0001H23.8V12.706H28L14 0.00012207L0 12.706H4.2V24.0001H11.2Z" fill="url(#paint0_linear_1_315)"/>
+    <defs>
+    <linearGradient id="paint0_linear_1_315" x1="0" y1="12.0001" x2="28" y2="12.0001" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#4A3EFE"/>
+    <stop offset="1" stop-color="#F073DA"/>
+    </linearGradient>
+    </defs>
+    </svg>
+  </div>
+  <div data-layer="Suuq Yaraha is located in Dherkenley District, within the Xanaano Bulsho sector.   I’ve lived here for over 13 years, since the age of 6.   The area is peaceful, welcoming, and socially active.   I completed my early education at Zubeir School — one of the top schools in the neighborhood — along with other respected institutions like Maxamuud Ahmed Ali and Amoud Schools." class="SuuqYarahaIsLocatedInDherkenleyDistrictWithinTheXanaanoBulshoSectorIVeLivedHereForOver13YearsSinceTheAgeOf6TheAreaIsPeacefulWelcomingAndSociallyActiveICompletedMyEarlyEducationAtZubeirSchoolOneOfTheTopSchoolsInTheNeighborhoodAlongWithOtherRespectedInstitutionsLikeMaxamuudAhmedAliAndAmoudSchools" style="width: 557px; height: 373px; left: 62px; top: 1519px; position: absolute"><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 33.60px; word-wrap: break-word">Suuq Yaraha</span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 400; line-height: 33.60px; word-wrap: break-word"> is located in </span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 33.60px; word-wrap: break-word">Dherkenley District</span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 400; line-height: 33.60px; word-wrap: break-word">, within the </span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 33.60px; word-wrap: break-word">Xanaano Bulsho sector</span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 400; line-height: 33.60px; word-wrap: break-word">.   I’ve lived here for over </span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 33.60px; word-wrap: break-word">13 years</span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 400; line-height: 33.60px; word-wrap: break-word">, since the age of </span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 33.60px; word-wrap: break-word">6</span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 400; line-height: 33.60px; word-wrap: break-word">.   The area is peaceful, welcoming, and socially active.   I completed my early education at </span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 33.60px; word-wrap: break-word">Zubeir School </span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 400; line-height: 33.60px; word-wrap: break-word">— one of the top schools in the neighborhood — along with other respected institutions like </span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 33.60px; word-wrap: break-word">Maxamuud Ahmed Ali</span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 400; line-height: 33.60px; word-wrap: break-word"> and </span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 33.60px; word-wrap: break-word">Amoud Schools</span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 400; line-height: 33.60px; word-wrap: break-word">.</span></div>
+  <div data-layer="Rectangle 1009" class="Rectangle1009" style="width: 678px; height: 499px; left: 683px; top: 1438px; position: absolute; background: #EEEFFE; box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.40); border-radius: 27px; border: 1px #4A3EFE solid"></div>
+  <div data-layer="Culture & Religion" class="CultureReligion" style="left: 931.20px; top: 1469px; position: absolute; color: #4A3EFE; font-size: 28px; font-family: Lato; font-weight: 900; line-height: 33.60px; word-wrap: break-word">Culture & Religion</div>
+  <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 889.60px; top: 1469px; position: absolute">
+    <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M2.2001 10.7657H18.2001C18.6641 10.7657 19.1121 10.858 19.5441 10.9656C19.6881 10.4581 19.8001 9.93521 19.8001 9.36617C19.8001 7.35147 18.7601 5.47518 17.0161 4.36787L10.2001 0.00012207L3.3841 4.36787C1.6401 5.47518 0.600098 7.35147 0.600098 9.36617C0.600098 9.93521 0.712097 10.4581 0.856097 10.9656C1.2881 10.858 1.7361 10.7657 2.2001 10.7657Z" fill="url(#paint0_linear_1_323)"/>
+    <defs>
+    <linearGradient id="paint0_linear_1_323" x1="0.600098" y1="5.48287" x2="19.8001" y2="5.48287" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#4A3EFE"/>
+    <stop offset="1" stop-color="#F073DA"/>
+    </linearGradient>
+    </defs>
+    </svg>
+  </div>
+  <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 880px; top: 1473.61px; position: absolute">
+    <svg width="39" height="27" viewBox="0 0 39 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M38.4 5.22771C38.4 3.53598 35.2 0.613892 35.2 0.613892C35.2 0.613892 32 3.53598 32 5.22771C32 6.36578 32.64 7.35007 33.6 7.87296V14.4553H30.4V11.3795C30.4 9.68773 28.96 8.30359 27.2 8.30359H11.2C9.44 8.30359 8 9.68773 8 11.3795V14.4553H4.8V7.87296C5.76 7.35007 6.4 6.36578 6.4 5.22771C6.4 3.53598 3.2 0.613892 3.2 0.613892C3.2 0.613892 0 3.53598 0 5.22771C0 6.36578 0.64 7.35007 1.6 7.87296V26.7589H16V20.6071C16 18.9154 17.44 17.5312 19.2 17.5312C20.96 17.5312 22.4 18.9154 22.4 20.6071V26.7589H36.8V7.87296C37.76 7.35007 38.4 6.36578 38.4 5.22771Z" fill="url(#paint0_linear_1_324)"/>
+    <defs>
+    <linearGradient id="paint0_linear_1_324" x1="0" y1="13.6864" x2="38.4" y2="13.6864" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#4A3EFE"/>
+    <stop offset="1" stop-color="#F073DA"/>
+    </linearGradient>
+    </defs>
+    </svg>
+  </div>
+  <div data-layer="Masjid Taqwo is one of the most special places to me — it was the first mosque I prayed in after moving to Suuq Yaraha, and I still go there regularly.    A big part of my Qur’an studies also took place right here in the neighborhood.    The people are cooperative, peaceful, and united in faith and community spirit." class="MasjidTaqwoIsOneOfTheMostSpecialPlacesToMeItWasTheFirstMosqueIPrayedInAfterMovingToSuuqYarahaAndIStillGoThereRegularlyABigPartOfMyQurAnStudiesAlsoTookPlaceRightHereInTheNeighborhoodThePeopleAreCooperativePeacefulAndUnitedInFaithAndCommunitySpirit" style="width: 646px; height: 336px; left: 699px; top: 1533px; position: absolute"><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 47.60px; word-wrap: break-word">Masjid Taqwo </span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 400; line-height: 47.60px; word-wrap: break-word">is one of the most</span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 47.60px; word-wrap: break-word"> special places</span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 400; line-height: 47.60px; word-wrap: break-word"> to me — it was the first mosque I prayed in after moving to </span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 47.60px; word-wrap: break-word">Suuq Yaraha</span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 400; line-height: 47.60px; word-wrap: break-word">, and I still go there regularly.    A big part of my </span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 47.60px; word-wrap: break-word">Qur’an studies</span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 400; line-height: 47.60px; word-wrap: break-word"> also took place right here in the neighborhood.    The people are cooperative, peaceful, and united in faith and community spirit.</span></div>
+  <div data-layer="Rectangle 1009" class="Rectangle1009" style="width: 678px; height: 415px; left: 366px; top: 1996px; position: absolute; background: #EEEFFE; box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.40); border-radius: 27px; border: 1px #4A3EFE solid"></div>
+  <div data-layer="Business & Local Markets" class="BusinessLocalMarkets" style="left: 566px; top: 2027px; position: absolute; color: #4A3EFE; font-size: 28px; font-family: Lato; font-weight: 900; line-height: 33.60px; word-wrap: break-word">Business & Local Markets</div>
+  <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 522px; top: 2030px; position: absolute">
+    <svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M27.6708 26.1054V29.3685C27.6708 29.8308 27.5323 30.2181 27.2552 30.5302C26.9791 30.8435 26.6366 31.0001 26.2277 31.0001C25.8189 31.0001 25.4764 30.8435 25.2003 30.5302C24.9232 30.2181 24.7847 29.8308 24.7847 29.3685V26.1054H21.8985C21.4897 26.1054 21.1472 25.9488 20.8711 25.6355C20.594 25.3233 20.4555 24.9361 20.4555 24.4738C20.4555 24.0115 20.594 23.6243 20.8711 23.3121C21.1472 22.9989 21.4897 22.8422 21.8985 22.8422H24.7847V19.5791C24.7847 19.1168 24.9232 18.729 25.2003 18.4158C25.4764 18.1036 25.8189 17.9475 26.2277 17.9475C26.6366 17.9475 26.9791 18.1036 27.2552 18.4158C27.5323 18.729 27.6708 19.1168 27.6708 19.5791V22.8422H30.5569C30.9658 22.8422 31.3083 22.9989 31.5844 23.3121C31.8615 23.6243 32 24.0115 32 24.4738C32 24.9361 31.8615 25.3233 31.5844 25.6355C31.3083 25.9488 30.9658 26.1054 30.5569 26.1054H27.6708ZM3.13867 26.1054C2.7298 26.1054 2.38731 25.9488 2.11121 25.6355C1.83414 25.3233 1.6956 24.9361 1.6956 24.4738V16.3159H1.44307C0.986096 16.3159 0.613303 16.1185 0.32469 15.7236C0.0360766 15.3299 -0.0601278 14.8747 0.0360767 14.358L1.47914 6.20012C1.5513 5.81942 1.71965 5.5067 1.98422 5.26196C2.24878 5.01723 2.54942 4.89486 2.88613 4.89486H22.1511C22.4878 4.89486 22.7884 5.01723 23.053 5.26196C23.3176 5.5067 23.4859 5.81942 23.5581 6.20012L25.0011 14.358C25.0973 14.8747 25.0011 15.3299 24.7125 15.7236C24.4239 16.1185 24.0511 16.3159 23.5941 16.3159H23.3416V19.5791C23.3416 20.0414 23.2031 20.4286 22.926 20.7408C22.6499 21.054 22.3074 21.2106 21.8985 21.2106C21.4897 21.2106 21.1472 21.054 20.8711 20.7408C20.594 20.4286 20.4555 20.0414 20.4555 19.5791V16.3159H14.6832V24.4738C14.6832 24.9361 14.5451 25.3233 14.269 25.6355C13.992 25.9488 13.649 26.1054 13.2401 26.1054H3.13867ZM4.58174 22.8422H11.7971V16.3159H4.58174V22.8422ZM3.13867 3.26328C2.7298 3.26328 2.38731 3.10719 2.11121 2.79502C1.83414 2.48175 1.6956 2.09398 1.6956 1.6317C1.6956 1.16942 1.83414 0.781649 2.11121 0.468386C2.38731 0.15621 2.7298 0.00012207 3.13867 0.00012207H21.8985C22.3074 0.00012207 22.6499 0.15621 22.926 0.468386C23.2031 0.781649 23.3416 1.16942 23.3416 1.6317C23.3416 2.09398 23.2031 2.48175 22.926 2.79502C22.6499 3.10719 22.3074 3.26328 21.8985 3.26328H3.13867Z" fill="url(#paint0_linear_1_331)"/>
+    <defs>
+    <linearGradient id="paint0_linear_1_331" x1="0" y1="15.5001" x2="32" y2="15.5001" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#4A3EFE"/>
+    <stop offset="1" stop-color="#F073DA"/>
+    </linearGradient>
+    </defs>
+    </svg>
+  </div>
+  <div data-layer="Suuq Yaraha thrives with business and daily trading.    The local market is full of energy and offers everything from clothes and vegetables to electronics.    Entrepreneurship and commerce are a strong part of the area's identity and everyday life." class="SuuqYarahaThrivesWithBusinessAndDailyTradingTheLocalMarketIsFullOfEnergyAndOffersEverythingFromClothesAndVegetablesToElectronicsEntrepreneurshipAndCommerceAreAStrongPartOfTheAreaSIdentityAndEverydayLife" style="width: 646px; height: 279px; left: 382px; top: 2091px; position: absolute"><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 47.60px; word-wrap: break-word">Suuq Yaraha</span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 400; line-height: 47.60px; word-wrap: break-word"> thrives with business and </span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 47.60px; word-wrap: break-word">daily trading</span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 400; line-height: 47.60px; word-wrap: break-word">.    </span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 47.60px; word-wrap: break-word">The local market</span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 400; line-height: 47.60px; word-wrap: break-word"> is full of energy and offers everything from </span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 47.60px; word-wrap: break-word">clothes</span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 400; line-height: 47.60px; word-wrap: break-word"> and </span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 47.60px; word-wrap: break-word">vegetables</span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 400; line-height: 47.60px; word-wrap: break-word"> to </span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 47.60px; word-wrap: break-word">electronics</span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 400; line-height: 47.60px; word-wrap: break-word">.    </span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 47.60px; word-wrap: break-word">Entrepreneurship</span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 400; line-height: 47.60px; word-wrap: break-word"> and </span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 47.60px; word-wrap: break-word">commerce</span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 400; line-height: 47.60px; word-wrap: break-word"> are a strong part of the area's identity and everyday life.</span></div>
+  <div data-svg-wrapper data-layer="Rectangle 11" class="Rectangle11" style="left: -0px; top: 2538px; position: absolute">
+    <svg width="1440" height="345" viewBox="0 0 1440 345" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1440 345L-3.42131e-05 345L-4.33051e-05 -0.000515082L1440 -0.000932693L1440 345Z" fill="#F073DA"/>
+    </svg>
+  </div>
+  <div data-layer="Rectangle 1" class="Rectangle1" style="width: 345px; height: 1180px; left: 1180px; top: 2538px; position: absolute; transform: rotate(90deg); transform-origin: top left; background: linear-gradient(180deg, rgba(74, 62, 254, 0) 21%, #4A3EFE 90%)"></div>
+  <div data-layer="© 2025 Zain Website. All rights reserved" class="2025ZainWebsiteAllRightsReserved" style="left: 494px; top: 2839px; position: absolute; color: white; font-size: 20px; font-family: sans-serif; font-weight: 500; word-wrap: break-word">© 2025 Zain Website. All rights reserved</div>
+  <div data-layer="Line 2" class="Line2" style="width: 1440px; height: 0px; left: 0px; top: 2818px; position: absolute; outline: 1px white solid; outline-offset: -0.50px"></div>
+  <div data-layer="QUICK LINKS" class="QuickLinks" style="left: 50px; top: 2548px; position: absolute; text-align: center; color: white; font-size: 30px; font-family: Poppins; font-weight: 700; line-height: 45px; word-wrap: break-word">QUICK LINKS</div>
+  <div data-layer="HOME" class="Home" style="left: 50px; top: 2610px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 500; line-height: 33px; word-wrap: break-word; text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36)">HOME</div>
+  <div data-layer="ABOUT ME" class="AboutMe" style="left: 50px; top: 2649px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 500; line-height: 33px; word-wrap: break-word; text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36)">ABOUT ME</div>
+  <div data-layer="MY NEIGHBORHOOD" class="MyNeighborhood" style="left: 50px; top: 2688px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 500; line-height: 33px; word-wrap: break-word; text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36)">MY NEIGHBORHOOD</div>
+  <div data-layer="MY UNIVERSITY" class="MyUniversity" style="left: 50px; top: 2727px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 500; line-height: 33px; word-wrap: break-word; text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36)">MY UNIVERSITY</div>
+  <div data-layer="CONTACT ME" class="ContactMe" style="left: 50px; top: 2766px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 500; line-height: 33px; word-wrap: break-word; text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36)">CONTACT ME</div>
+  <div data-layer="Whatsapp" class="Whatsapp" style="width: 115px; height: 38px; left: 536.69px; top: 2555px; position: absolute; text-align: center; color: #E6E8FF; font-size: 22px; font-family: Poppins; font-weight: 400; line-height: 33px; word-wrap: break-word">Whatsapp</div>
+  <div data-layer="+252 612652448" class="252612652448" style="left: 536.69px; top: 2578px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 700; line-height: 33px; word-wrap: break-word">+252 612652448</div>
+  <div data-svg-wrapper data-layer="Rectangle 15" class="Rectangle15" style="left: 478px; top: 2560px; position: absolute">
+    <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_d_1_352)">
+      <rect x="7.90625" y="3.90601" width="38.5938" height="38.5938" rx="7" fill="#EEEFFE"/>
+    </g>
+    <defs>
+    <filter id="filter0_d_1_352" x="0.90625" y="0.906006" width="52.5938" height="52.5938" filterUnits="userSpaceOnUse" color-sans-serifpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+    <feOffset dy="4"/>
+    <feGaussianBlur stdDeviation="3.5"/>
+    <feComposite in2="hardAlpha" operator="out"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.36 0"/>
+    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_352"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_352" result="shape"/>
+    </filter>
+    </defs>
+    </svg>
+  </div>
+  <div data-svg-wrapper data-layer="Whatsapp" class="Whatsapp" style="left: 477px; top: 2556px; position: absolute">
+    <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M37.2909 19.6594C34.9592 17.3153 31.8545 16.031 28.5503 16.031C21.7423 16.031 16.1937 21.5796 16.1937 28.3875C16.1937 30.5696 16.7673 32.6893 17.8396 34.5596L16.094 40.9685L22.6401 39.2478C24.4481 40.2329 26.4805 40.7565 28.5503 40.7565C35.3582 40.7565 40.9068 35.2079 40.9068 28.4C40.9068 25.0958 39.6225 21.9911 37.2909 19.6594ZM28.5503 38.6618C26.7049 38.6618 24.8969 38.163 23.3134 37.2279L22.9393 37.0034L19.0491 38.0259L20.084 34.2354L19.8346 33.8489C18.8122 32.2154 18.2636 30.3202 18.2636 28.3875C18.2636 22.7267 22.877 18.1133 28.5378 18.1133C31.2809 18.1133 33.862 19.1856 35.7946 21.1307C37.7397 23.0758 38.7996 25.6569 38.7996 28.4C38.8245 34.0608 34.2111 38.6618 28.5503 38.6618ZM34.1862 30.981C33.8744 30.8314 32.3532 30.0833 32.0789 29.9711C31.7922 29.8713 31.5927 29.8214 31.3807 30.1207C31.1687 30.4324 30.5827 31.1307 30.4081 31.3302C30.2336 31.5421 30.0465 31.5671 29.7348 31.405C29.4231 31.2554 28.4256 30.9187 27.2535 29.8713C26.3308 29.0484 25.7199 28.0384 25.5328 27.7267C25.3583 27.415 25.5079 27.2529 25.67 27.0908C25.8072 26.9536 25.9817 26.7292 26.1313 26.5546C26.281 26.3801 26.3433 26.2429 26.4431 26.0434C26.5428 25.8314 26.4929 25.6569 26.4181 25.5073C26.3433 25.3576 25.7199 23.8364 25.4705 23.213C25.2211 22.6145 24.9593 22.6893 24.7722 22.6768C24.5852 22.6768 24.3857 22.6768 24.1737 22.6768C23.9618 22.6768 23.6376 22.7517 23.3508 23.0634C23.0765 23.3751 22.2785 24.1232 22.2785 25.6444C22.2785 27.1656 23.3882 28.6369 23.5378 28.8364C23.6875 29.0484 25.7199 32.1656 28.8121 33.4997C29.5478 33.8239 30.1213 34.0109 30.5702 34.1481C31.3059 34.385 31.9792 34.3476 32.5153 34.2728C33.1138 34.1855 34.3482 33.5247 34.5976 32.8015C34.8595 32.0783 34.8595 31.4673 34.7722 31.3302C34.6849 31.193 34.4979 31.1307 34.1862 30.981Z" fill="#4A3EFE"/>
+    </svg>
+  </div>
+  <div data-layer="Email" class="Email" style="width: 60px; height: 38px; left: 537px; top: 2639px; position: absolute; text-align: center; color: #E6E8FF; font-size: 22px; font-family: Poppins; font-weight: 400; line-height: 33px; word-wrap: break-word">Email</div>
+  <div data-layer="khaalidmaxamed1000@gmail.com" class="Khaalidmaxamed1000GmailCom" style="left: 537px; top: 2662px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 700; line-height: 33px; word-wrap: break-word">khaalidmaxamed1000@gmail.com</div>
+  
+  
+  <div data-svg-wrapper data-layer="Email" class="Email" style="left: 478px; top: 2648px; position: absolute;">
+    <svg width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg" fill="none">
+      <!-- Background rectangle with shadow -->
+      <g filter="url(#filter0_d_1_352)">
+        <rect x="7.90625" y="3.90601" width="38.5938" height="38.5938" rx="7" fill="#EEEFFE" />
+      </g>
+
+      <!-- Email icon (centered and purple) -->
+      <path d="M20.7 0H2.3C1.035 0 0.0115 1.0125 0.0115 2.25L0 15.75C0 16.9875 1.035 18 2.3 18H20.7C21.965 18 23 16.9875 23 15.75V2.25C23 1.0125 21.965 0 20.7 0ZM20.7 4.5L11.5 10.125L2.3 4.5V2.25L11.5 7.875L20.7 2.25V4.5Z"
+            fill="#4A3EFE" transform="translate(15 18) scale(1)"/>
+
+      <!-- Drop shadow definition -->
+      <defs>
+        <filter id="filter0_d_email" x="0.906" y="0.906" width="52.594" height="52.594" filterUnits="userSpaceOnUse" color-sans-serifpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+          <feColorMatrix in="SourceAlpha" type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"/>
+          <feOffset dy="4"/>
+          <feGaussianBlur stdDeviation="3.5"/>
+          <feComposite in2="hardAlpha" operator="out"/>
+          <feColorMatrix type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.36 0"/>
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+        </filter>
+      </defs>
+    </svg>
+  </div>
+
+
+
+
+  
+
+  <!-- Label -->
+  <div data-layer="Location" class="Location"
+      style="width: 94px; height: 38px; left: 537px; top: 2723px; position: absolute; text-align: center; color: #E6E8FF; font-size: 22px; font-family: Poppins; font-weight: 400; line-height: 33px; word-wrap: break-word;z-index: 10;">
+    Location
+  </div>
+
+  <!-- City Name -->
+  <div data-layer="Mogadishu-Somalia" class="MogadishuSomalia"
+      style="left: 537px; top: 2746px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 700; line-height: 33px; word-wrap: break-word">
+    Mogadishu-Somalia
+  </div>
+
+  <!-- Icon background -->
+  <div data-svg-wrapper data-layer="Rectangle 15" class="Rectangle15"
+      style="left: 485.91px; top: 2730.91px; position: absolute; z-index: 2;">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+      <rect x="0.906" y="0.906" width="38.594" height="38.594" rx="7" fill="#EEEFFE"/>
+    </svg>
+  </div>
+
+  <!-- Location pin icon -->
+  <div data-svg-wrapper data-layer="Vector" class="Vector"
+      style="left: 497px; top: 2737px; position: absolute; z-index: 3;">
+    <svg width="18" height="26" viewBox="0 0 18 26" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+      <path d="M9 0C4.024 0 0 4.069 0 9.1C0 15.925 9 26 9 26C9 26 18 15.925 18 9.1C18 4.069 13.976 0 9 0ZM9 12.35C7.226 12.35 5.786 10.894 5.786 9.1C5.786 7.306 7.226 5.85 9 5.85C10.774 5.85 12.214 7.306 12.214 9.1C12.214 10.894 10.774 12.35 9 12.35Z"
+            fill="#4A3EFE"/>
+    </svg>
+  </div>
+
+  <div data-layer="Follow Us" class="FollowUs" style="left: 1160px; top: 2629px; position: absolute; text-align: center; color: white; font-size: 26px; font-family: Poppins; font-weight: 700; line-height: 39px; word-wrap: break-word">Follow Us </div>
+  <div data-svg-wrapper data-layer="Rectangle 16" class="Rectangle16" style="left: 1155px; top: 2671px; position: absolute">
+    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_d_1_376)">
+    <rect x="7" y="2.99976" width="42" height="42" rx="5" fill="#EEEFFE"/>
+    </g>
+    <defs>
+    <filter id="filter0_d_1_376" x="0" y="-0.000244141" width="56" height="56" filterUnits="userSpaceOnUse" color-sans-serifpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+    <feOffset dy="4"/>
+    <feGaussianBlur stdDeviation="3.5"/>
+    <feComposite in2="hardAlpha" operator="out"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.36 0"/>
+    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_376"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_376" result="shape"/>
+    </filter>
+    </defs>
+    </svg>
+  </div>
+  <div data-layer="F" class="F" style="left: 1172px; top: 2668px; position: absolute; text-align: center; color: #EEEFFE; font-size: 36px; font-family: Poppins; font-weight: 700; text-decoration: underline; line-height: 54px; word-wrap: break-word">F</div>
+  <div data-svg-wrapper data-layer="Facebook" class="Facebook" style="left: 1167.5px; top: 2680.4px; position: absolute">
+    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M27.5 14.9998C27.5 8.09976 21.9 2.49976 15 2.49976C8.1 2.49976 2.5 8.09976 2.5 14.9998C2.5 21.0498 6.8 26.0873 12.5 27.2498V18.7498H10V14.9998H12.5V11.8748C12.5 9.46226 14.4625 7.49976 16.875 7.49976H20V11.2498H17.5C16.8125 11.2498 16.25 11.8123 16.25 12.4998V14.9998H20V18.7498H16.25V27.4373C22.5625 26.8123 27.5 21.4873 27.5 14.9998Z" fill="#4A3EFE"/>
+    </svg>
+  </div>
+  <div data-svg-wrapper data-layer="Rectangle 17" class="Rectangle17" style="left: 1216px; top: 2671px; position: absolute">
+    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_d_1_381)">
+    <rect x="7" y="2.99976" width="42" height="42" rx="5" fill="#EEEFFE"/>
+    </g>
+    <defs>
+    <filter id="filter0_d_1_381" x="0" y="-0.000244141" width="56" height="56" filterUnits="userSpaceOnUse" color-sans-serifpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+    <feOffset dy="4"/>
+    <feGaussianBlur stdDeviation="3.5"/>
+    <feComposite in2="hardAlpha" operator="out"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.36 0"/>
+    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_381"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_381" result="shape"/>
+    </filter>
+    </defs>
+    </svg>
+  </div>
+  <div data-layer="X." class="X" style="width: 43px; left: 1222px; top: 2667px; position: absolute; text-align: center"><span style="color: #EEEFFE; font-size: 36px; font-family: Poppins; font-weight: 700; text-decoration: underline; line-height: 54px; word-wrap: break-word">X</span><span style="color: #EEEFFE; font-size: 36px; font-family: Poppins; font-weight: 700; line-height: 54px; word-wrap: break-word">.</span></div>
+  <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 1230px; top: 2683px; position: absolute">
+    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 -0.000244141L9.62584 14.0623L0.203878 24.9998H2.29138L10.5478 15.4089L17.1129 24.9998H25L14.9433 10.3089L23.8178 -0.000244141H21.7367L14.0201 8.95843L7.88711 -0.000244141H0ZM2.49269 1.31555H7.19598L22.5073 23.684H17.804L2.49269 1.31555Z" fill="#4A3EFE"/>
+    </svg>
+  </div>
+  <div data-svg-wrapper data-layer="Rectangle 18" class="Rectangle18" style="left: 1277px; top: 2671px; position: absolute">
+    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_d_1_385)">
+    <rect x="7" y="2.99976" width="42" height="42" rx="5" fill="#EEEFFE"/>
+    </g>
+    <defs>
+    <filter id="filter0_d_1_385" x="0" y="-0.000244141" width="56" height="56" filterUnits="userSpaceOnUse" color-sans-serifpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+    <feOffset dy="4"/>
+    <feGaussianBlur stdDeviation="3.5"/>
+    <feComposite in2="hardAlpha" operator="out"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.36 0"/>
+    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_385"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_385" result="shape"/>
+    </filter>
+    </defs>
+    </svg>
+  </div>
+  <div data-layer="TikTok" class="Tiktok" style="width: 57px; height: 57px; left: 1269px; top: 2664px; position: absolute; overflow: hidden">
+    <div data-layer="Vector" class="Vector" style="width: 42.75px; height: 42.75px; left: 7.12px; top: 7.12px; position: absolute; background: linear-gradient(180deg, rgba(52, 52, 52, 0) 100%)"></div>
+    <div data-layer="TI" class="Ti" style="width: 40px; left: 13px; top: 1px; position: absolute; text-align: center; color: #EEEFFE; font-size: 36px; font-family: Poppins; font-weight: 700; text-decoration: underline; line-height: 54px; word-wrap: break-word">TI</div>
+    <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 25px; top: 19px; position: absolute">
+      <svg width="23" height="28" viewBox="0 0 23 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6846 9.47057C17.5561 10.8077 19.8491 11.5938 22.3251 11.5938V6.83075C21.856 6.83075 21.3893 6.78207 20.931 6.68469V10.4336C18.455 10.4336 16.1632 9.64632 14.2905 8.31038V18.0289C14.2905 22.8905 10.3468 26.8318 5.48278 26.8318C3.66828 26.8318 1.98084 26.2832 0.57959 25.3427C2.17915 26.9767 4.40928 27.9908 6.8769 27.9908C11.7409 27.9908 15.6846 24.0495 15.6846 19.1879V9.47057ZM17.4053 4.66594C16.4493 3.62213 15.8212 2.27194 15.6846 0.779254V0.166504H14.3629C14.6954 2.06294 15.8306 3.68388 17.4053 4.66594ZM3.6564 21.6128C3.12203 20.9121 2.83346 20.0559 2.83465 19.1748C2.83465 16.9506 4.63846 15.148 6.86384 15.148C7.27828 15.148 7.69034 15.2109 8.08578 15.3368V10.4681C7.62384 10.4051 7.15834 10.3778 6.69165 10.3873V14.1766C6.29621 14.0508 5.88415 13.9878 5.46853 13.9878C3.24315 13.9878 1.43934 15.7904 1.43934 18.0146C1.44053 19.5881 2.34184 20.9501 3.6564 21.6128Z" fill="#4A3EFE"/>
+      </svg>
+    </div>
+    <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 22.49px; top: 19px; position: absolute">
+      <svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2902 8.31038C18.1617 9.6475 20.4547 10.4336 22.9307 10.4336V6.68469C21.5484 6.39019 20.3253 5.66819 19.405 4.66475C17.8303 3.68269 16.6963 2.06294 16.3638 0.166504H12.8927V19.1879C12.8844 21.4049 11.0842 23.2004 8.86354 23.2004C7.55491 23.2004 6.39235 22.577 5.6561 21.6116C4.34154 20.9489 3.44022 19.5869 3.44022 18.0146C3.44022 15.7904 5.24404 13.9878 7.46941 13.9878C7.89573 13.9878 8.3066 14.0543 8.69254 14.1766V10.3885C3.91404 10.4871 0.0712891 14.3892 0.0712891 19.1891C0.0712891 21.5854 1.02841 23.7574 2.58166 25.3439C3.98291 26.2844 5.67035 26.833 7.48485 26.833C12.3488 26.833 16.2925 22.8917 16.2925 18.0301L16.2902 8.31038Z" fill="#4A3EFE"/>
+      </svg>
+    </div>
+    <div data-layer="Vector" class="Vector" style="width: 24.26px; height: 26.34px; left: 15.67px; top: 14.01px; position: absolute; background: rgba(239, 115, 218, 0)"></div>
+  </div>
+</div>
+</body>
+</html>

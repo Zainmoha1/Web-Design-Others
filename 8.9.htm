@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Picture Element</title>
+<meta charset="utf-8">
+</head>
+<body>
+	<p style="color: #4A3EFE;
+			font-size: 23px;
+			font-family: sans-serif;
+			font-weight: 500;
+
+			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);">Practice 8.9</p>
+<h1>Picture Element</h1>
+
+<picture>
+        <source media="(min-width: 1200px)" srcset="large.jpg">
+        <source media="(min-width: 800px)" srcset="medium.jpg">
+		<source media="(min-width: 320px)" srcset="small.jpg">
+        <img src="fallback.jpg" alt="water wheel"> 
+</picture>
+
+</body>
+</html>

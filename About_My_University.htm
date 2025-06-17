@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About My university</title>
+</head>
+<body>
+  <div data-layer="Desktop -4" class="Desktop4" style=" width: 1440px; height: 3586px;  position: relative; margin-right:auto; margin-left: auto; background: white; overflow: hidden">
+
+    <div data-layer="Rectangle 20" class="Rectangle20" style="width: 1440px; height: 749px; left: 0px; top: 0px; position: absolute; background: linear-gradient(270deg, #F073DA 0%, #4A3EFE 100%)"></div>
+    <img data-layer="Rectangle 2" class="Rectangle2" style="width: 507px; height: 504px; left: 901px; top: 148px; position: absolute" src="JUS.png" />
+    <div data-layer="Rectangle 1" class="Rectangle1" style="width: 1440px; height: 111px; left: 0px; top: 638px; position: absolute; background: linear-gradient(180deg, rgba(234, 113, 219, 0) 0%, rgba(234, 113, 219, 0.48) 100%)"></div>
+    <div data-layer="Rectangle 1" class="Rectangle1" style="width: 749px; height: 1440px; left: 1440px; top: 0px; position: absolute; transform: rotate(90deg); transform-origin: top left; background: linear-gradient(180deg, rgba(74, 62, 254, 0) 43%, #4A3EFE 90%)"></div>
+    <div data-layer="Hi, I study at SNU —   a historic university   where knowledge grows,   innovation begins,   and my passion for tech   finds its purpose." class="HiIStudyAtSnuAHistoricUniversityWhereKnowledgeGrowsInnovationBeginsAndMyPassionForTechFindsItsPurpose" style="left: 87px; top: 225px; position: absolute; color: white; font-size: 45px; font-family: sans-serif; font-weight: 700; word-wrap: break-word">Hi, I study at SNU — <br>  a historic university <br>  where knowledge grows, <br>  innovation begins, <br>  and my passion for tech <br>  finds its purpose.</div>
+    <div data-layer="Rectangle 6" class="Rectangle6" style="width: 140px; height: 45px; left: 87px; top: 560px; position: absolute; opacity: 0.21; background: rgba(217, 217, 217, 0.70); box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36); border-radius: 22.50px"></div>
+    <a href="About_Me.htm"><div data-layer="About Me" class="AboutMe" style="width: 94px; height: 25px; left: 110px; top: 570px; position: absolute; color: white; font-size: 20px; font-family: sans-serif; font-weight: 500; word-wrap: break-word">About Me</div></a>
+    <div data-layer="Rectangle 6" class="Rectangle6" style="width: 140px; height: 45px; left: 236px; top: 560px; position: absolute; opacity: 0.21; background: rgba(217, 217, 217, 0.70); box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36); border-radius: 22.50px"></div>
+    <a href="Contact_me.htm"><div data-layer="Contact Me" class="ContactMe" style="width: 113px; height: 25px; left: 249px; top: 570px; position: absolute; color: white; font-size: 20px; font-family: sans-serif; font-weight: 500; word-wrap: break-word">Contact Me</div></a>
+    <div data-layer="Rectangle 8" class="Rectangle8" style="width: 1622px; height: 80px; left: -91px; top: -8px; position: absolute; background: #EEEFFE"></div>
+<style>
+  a:hover { color: #000066; }
+  label:hover { color: #000066; }
+
+  .nav-link {
+    position: absolute;
+    color: #4A3EFE;
+    font-size: 24px;
+    font-family: Tajawal, sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    left: -50px;
+    top: -16px;
+    z-index: 1000;
+  }
+
+  .nav-container {
+    position: relative;
+  }
+
+  .dropdown {
+    position: absolute;
+    top: 38px;
+    left: 1340px;
+    cursor: pointer;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .dropdown-label {
+    color: #4A3EFE;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: Tajawal, sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    position: relative;
+    z-index: 1000;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1001;
+    min-width: 160px;
+  }
+
+  #menu-toggle:checked + .dropdown-label + .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    display: block;
+    padding: 8px 12px;
+    font-size: 18px;
+    color: #4A3EFE;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #EEEFFE;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  #menu-toggle:checked ~ .overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+  }
+</style>
+
+<div data-layer="Nav" class="nav-link" style="position: relative;">
+  <a href="Home.htm" class="nav-link" style="left: 506px;top: 38px;">HOME</a>
+  <a href="About_Me.htm" class="nav-link" style="left: 601.71px;top: 38px;">ABOUT ME</a>
+  <a href="About_My_Neighberhood.htm" class="nav-link" style="left: 742.76px;top: 38px;">MY NEIGHBORHOOD</a>
+  <a href="About_My_University.htm" class="nav-link" style="left: 983.55px;top: 38px;">MY UNIVERSITY</a>
+  <a href="Contact_me.htm" class="nav-link" style="left: 1176.99px; top: 38px;">CONTACT ME</a>
+
+  <div class="dropdown nav-link">
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="dropdown-label">OTHERS</label>
+
+    <div class="dropdown-content">
+      <a href="Ch6.htm">Chapter 6</a>
+      <a href="Ch7.htm">Chapter 7</a>
+      <a href="Ch8.htm">Chapter 8</a>
+      <a href="Ch9.htm">Chapter 9</a>
+      <a href="Ch10.htm">Chapter 10</a>
+    </div>
+
+    <label for="menu-toggle" class="overlay"></label>
+  </div>
+</div>
+  <div data-layer="Rectangle 5" class="Rectangle5" style="width: 225px; height: 42px; left: 127px; top: 15px; position: absolute; background: #4A3EFE; box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36); border-radius: 5px"></div>
+  <div data-layer="ZAIN WEBSITE" class="ZainWebsite" style=" height: 34px; left: 140px; top: 13px; position: absolute; text-align: center; color: white; font-size: 32px; font-family: Tajawal; font-weight: 900; line-height: 48px; word-wrap: break-word">ZAIN WEBSITE</div>
+    <div data-layer="66" style="width: 1504px; height: 812px; left: -30px; top: 1054px; position: absolute; background: rgba(255, 255, 255, 0)"></div>
+    <img data-layer="Rectangle 7" class="Rectangle7" style="width: 1321px; height: 591px; left: 60px; top: 826px; position: absolute; border-radius: 21px" src="Gaheyr.jpg" />
+    <div data-layer="Rectangle 8" class="Rectangle8" style="width: 1321px; height: 591px; left: 60px; top: 826px; position: absolute; background: linear-gradient(180deg, rgba(230, 232, 255, 0.75) 0%, rgba(230, 232, 255, 0.75) 100%); border-radius: 21px; border: 1px #4A3EFE solid"></div>
+    <div data-layer="Founded in 1954, SNU is one of the oldest and most respected universities in Somalia.    It reopened in 2014, offering modern education across multiple disciplines. 📍 Campus: I study at Geheyr Campus, under the Faculty of Science and Technology, majoring in Computer Science.    🏫 SNU has 5 campuses: 3 in Mogadishu, 1 in Puntland, and 1 in Galmudug.    📚 It provides qualified lecturers, modern labs, and an environment that fuels innovation and growth. 🎯 Why I chose SNU:    It blends history, opportunity, and technology — helping me build a strong future in the tech world." class="FoundedIn1954SnuIsOneOfTheOldestAndMostRespectedUniversitiesInSomaliaItReopenedIn2014OfferingModernEducationAcrossMultipleDisciplinesCampusIStudyAtGeheyrCampusUnderTheFacultyOfScienceAndTechnologyMajoringInComputerScienceSnuHas5Campuses3InMogadishu1InPuntlandAnd1InGalmudugItProvidesQualifiedLecturersModernLabsAndAnEnvironmentThatFuelsInnovationAndGrowthWhyIChoseSnuItBlendsHistoryOpportunityAndTechnologyHelpingMeBuildAStrongFutureInTheTechWorld" style="left: 80px; top: 968px; position: absolute"><span style="color: black; font-size: 24px; font-family: Lato; font-weight: 400; line-height: 45.60px; word-wrap: break-word">Founded in </span><span style="color: black; font-size: 24px; font-family: Lato; font-weight: 600; line-height: 45.60px; word-wrap: break-word">1954</span><span style="color: black; font-size: 24px; font-family: Lato; font-weight: 400; line-height: 45.60px; word-wrap: break-word">, SNU is one of the oldest and most respected universities in Somalia.    It reopened in </span><span style="color: black; font-size: 24px; font-family: Lato; font-weight: 600; line-height: 45.60px; word-wrap: break-word">2014</span><span style="color: black; font-size: 24px; font-family: Lato; font-weight: 400; line-height: 45.60px; word-wrap: break-word">, offering <br>   modern education across multiple disciplines.<br/>📍 Campus: I study at </span><span style="color: black; font-size: 24px; font-family: Lato; font-weight: 600; line-height: 45.60px; word-wrap: break-word">Geheyr Campus</span><span style="color: black; font-size: 24px; font-family: Lato; font-weight: 400; line-height: 45.60px; word-wrap: break-word">, under the </span><span style="color: black; font-size: 24px; font-family: Lato; font-weight: 600; line-height: 45.60px; word-wrap: break-word">Faculty of Science</span><span style="color: black; font-size: 24px; font-family: Lato; font-weight: 400; line-height: 45.60px; word-wrap: break-word"> and </span><span style="color: black; font-size: 24px; font-family: Lato; font-weight: 600; line-height: 45.60px; word-wrap: break-word">Technology</span><span style="color: black; font-size: 24px; font-family: Lato; font-weight: 400; line-height: 45.60px; word-wrap: break-word">, majoring in </span><span style="color: black; font-size: 24px; font-family: Lato; font-weight: 600; line-height: 45.60px; word-wrap: break-word">Computer Science</span><span style="color: black; font-size: 24px; font-family: Lato; font-weight: 400; line-height: 45.60px; word-wrap: break-word">. <br>   🏫 SNU has </span><span style="color: black; font-size: 24px; font-family: Lato; font-weight: 600; line-height: 45.60px; word-wrap: break-word">5 campuses:</span><span style="color: black; font-size: 24px; font-family: Lato; font-weight: 400; line-height: 45.60px; word-wrap: break-word"> </span><span style="color: black; font-size: 24px; font-family: Lato; font-weight: 600; line-height: 45.60px; word-wrap: break-word">3 in Mogadishu</span><span style="color: black; font-size: 24px; font-family: Lato; font-weight: 400; line-height: 45.60px; word-wrap: break-word">, </span><span style="color: black; font-size: 24px; font-family: Lato; font-weight: 600; line-height: 45.60px; word-wrap: break-word">1 in Puntland</span><span style="color: black; font-size: 24px; font-family: Lato; font-weight: 400; line-height: 45.60px; word-wrap: break-word">, and </span><span style="color: black; font-size: 24px; font-family: Lato; font-weight: 600; line-height: 45.60px; word-wrap: break-word">1 in Galmudug</span><span style="color: black; font-size: 24px; font-family: Lato; font-weight: 400; line-height: 45.60px; word-wrap: break-word">.    📚 It provides qualified lecturers,<br> modern labs, and an environment that fuels innovation and growth.<br/>🎯 Why I chose </span><span style="color: black; font-size: 24px; font-family: Lato; font-weight: 600; line-height: 45.60px; word-wrap: break-word">SNU</span><span style="color: black; font-size: 24px; font-family: Lato; font-weight: 400; line-height: 45.60px; word-wrap: break-word">:    It blends history, opportunity, and technology — helping me build a strong future in the tech world.</span></div>
+    <div data-layer="SOMALI NATIONAL UNIVERSITY (SNU)" class="SomaliNationalUniversitySnu" style="width: 1046px; height: 102px; left: 198px; top: 870px; position: absolute; color: black; font-size: 54.6px; font-family: Poppins; font-weight: 900; line-height: 66px; word-wrap: break-word; text-shadow: 0px 4px 7px rgba(255, 255, 255, 1.00)">SOMALI NATIONAL UNIVERSITY (SNU)</div>
+    <div data-layer="Rectangle 1009" class="Rectangle1009" style="width: 429px; height: 418px; left: 42px; top: 1550px; position: absolute; background: #E6E8FF; box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.40)"></div>
+    <div data-layer="SNU - GAHEYR COMPUS" class="SnuGaheyrCompus" style="left: 89px; top: 1916px; position: absolute; color: #4A3EFE; font-size: 28px; font-family: Poppins; font-weight: 900; line-height: 33.60px; word-wrap: break-word">SNU - GAHEYR COMPUS</div>
+    <img data-layer="Rectangle 1011" class="Rectangle1011" style="width: 429px; height: 340px; left: 42px; top: 1551px; position: absolute" src="Gaheyr.jpg" />
+    <div data-layer="Rectangle 1013" class="Rectangle1013" style="width: 429px; height: 418px; left: 42px; top: 1550px; position: absolute; box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.40); border: 1px #4A3EFE solid"></div>
+    <div data-layer="Rectangle 1020" class="Rectangle1020" style="width: 429px; height: 418px; left: 42px; top: 2025px; position: absolute; background: #E6E8FF; box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.40)"></div>
+    <div data-layer="SNU - PUNTLAND COMPUS" class="SnuPuntlandCompus" style="left: 71px; top: 2391px; position: absolute; color: #4A3EFE; font-size: 28px; font-family: Poppins; font-weight: 900; line-height: 33.60px; word-wrap: break-word">SNU - PUNTLAND COMPUS</div>
+    <img data-layer="Rectangle 1023" class="Rectangle1023" style="width: 429px; height: 340px; left: 42px; top: 2026px; position: absolute" src="Puntland.jpg" />
+    <div data-layer="Rectangle 1025" class="Rectangle1025" style="width: 429px; height: 418px; left: 42px; top: 2025px; position: absolute; box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.40); border: 1px #4A3EFE solid"></div>
+    <div data-layer="Rectangle 1014" class="Rectangle1014" style="width: 429px; height: 418px; left: 506px; top: 1550px; position: absolute; background: #E6E8FF; box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.40)"></div>
+    <div data-layer="SNU - KM4 COMPUS" class="SnuKm4Compus" style="left: 579px; top: 1916px; position: absolute; color: #4A3EFE; font-size: 28px; font-family: Poppins; font-weight: 900; line-height: 33.60px; word-wrap: break-word">SNU - KM4 COMPUS</div>
+    <img data-layer="Rectangle 1015" class="Rectangle1015" style="width: 429px; height: 340px; left: 506px; top: 1551px; position: absolute" src="KM4.jpg" />
+    <div data-layer="Rectangle 1016" class="Rectangle1016" style="width: 429px; height: 418px; left: 506px; top: 1550px; position: absolute; box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.40); border: 1px #4A3EFE solid"></div>
+    <div data-layer="Rectangle 1021" class="Rectangle1021" style="width: 429px; height: 418px; left: 506px; top: 2025px; position: absolute; background: #E6E8FF; box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.40)"></div>
+    <div data-layer="SNU - GALMUDUG COMPUS" class="SnuGalmudugCompus" style="left: 529px; top: 2391px; position: absolute; color: #4A3EFE; font-size: 28px; font-family: Poppins; font-weight: 900; line-height: 33.60px; word-wrap: break-word">SNU - GALMUDUG COMPUS</div>
+    <img data-layer="Rectangle 1024" class="Rectangle1024" style="width: 429px; height: 340px; left: 506px; top: 2026px; position: absolute" src="Galmudug.jpg" />
+    <div data-layer="Rectangle 1027" class="Rectangle1027" style="width: 429px; height: 418px; left: 506px; top: 2025px; position: absolute; box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.40); border: 1px #4A3EFE solid"></div>
+    <div data-layer="Rectangle 1017" class="Rectangle1017" style="width: 429px; height: 418px; left: 970px; top: 1550px; position: absolute; background: #E6E8FF; box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.40)"></div>
+    <div data-layer="SNU - SHABELLE COMPUS" class="SnuShabelleCompus" style="left: 1007px; top: 1916px; position: absolute; color: #4A3EFE; font-size: 28px; font-family: Poppins; font-weight: 900; line-height: 33.60px; word-wrap: break-word">SNU - SHABELLE COMPUS</div>
+    <img data-layer="Rectangle 1018" class="Rectangle1018" style="width: 429px; height: 340px; left: 970px; top: 1551px; position: absolute" src="Shabelle.jpg" />
+    <div data-layer="Rectangle 1019" class="Rectangle1019" style="width: 429px; height: 418px; left: 970px; top: 1550px; position: absolute; box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.40); border: 1px #4A3EFE solid"></div>
+    <div data-layer="Rectangle 1022" class="Rectangle1022" style="width: 429px; height: 418px; left: 970px; top: 2025px; position: absolute; background: #E6E8FF; box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.40)"></div>
+    <a href="https://snu.edu.so/about/rectors-message/"target= "_blank"><div data-layer="RECTOR OF SNU" class="RectorOfSnu" style="left: 1110px; top: 2408px; position: absolute; color: #4A3EFE; font-size: 20px; font-family: Poppins; font-weight: 400; text-decoration: underline; line-height: 24px; word-wrap: break-word;z-index:1000;">RECTOR OF SNU</div></a>
+    <div data-layer="PROF. HASSAN OSMAN GA’AL (PHD)" class="ProfHassanOsmanGaAlPhd" style="left: 984px; top: 2381px; position: absolute; color: #4A3EFE; font-size: 22px; font-family: Poppins; font-weight: 900; line-height: 26.40px; word-wrap: break-word">PROF. HASSAN OSMAN GA’AL (PHD)</div>
+    <img data-layer="Rectangle 1026" class="Rectangle1026" style="width: 429px; height: 340px; left: 970px; top: 2026px; position: absolute" src="Rector.jpg" />
+    <div data-layer="Rectangle 1028" class="Rectangle1028" style="width: 429px; height: 418px; left: 970px; top: 2025px; position: absolute; box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.40); border: 1px #4A3EFE solid"></div>
+    <div data-layer="SNU COMPUSES AND RECTOR" class="SnuCompusesAndRector" style="left: 478px; top: 1468px; position: absolute; color: #4A3EFE; font-size: 33px; font-family: Poppins; font-weight: 900; line-height: 39.60px; word-wrap: break-word; text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.28)">SNU COMPUSES AND RECTOR</div>
+    <div data-layer="SNU FACULTIES" class="SnuFaculties" style="left: 581px; top: 2525px; position: absolute; color: #4A3EFE; font-size: 36px; font-family: Poppins; font-weight: 900; line-height: 43.20px; word-wrap: break-word; text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.28)">SNU FACULTIES</div>
+    <img data-layer="Rectangle 1012" class="Rectangle1012" style="width: 93.31px; height: 91px; left: 92px; top: 850px; position: absolute; mix-blend-mode: darken" src="data:image/png;base64,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" />
+    <div data-layer="Rectangle 1029" class="Rectangle1029" style="width: 209px; height: 56px; left: 616px; top: 1341px; position: absolute; background: #E6E8FF; box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36); border-radius: 3px"></div>
+    <a href="https://snu.edu.so/about/about-snu/"target="_blank"><div data-layer="READ MORE" class="ReadMore" style="left: 632px; top: 1351px; position: absolute; color: black; font-size: 30px; font-family: Poppins; font-weight: 900; text-decoration: underline; line-height: 36px; word-wrap: break-word">READ MORE</div></a>
+    <div data-svg-wrapper data-layer="Rectangle 11" class="Rectangle11" style="left: -115px; top: 3247px; position: absolute">
+      <svg width="1900" height="345" viewBox="0 0 1440 345" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1479 345L-115 345L-115 0.000431755L1479 -3.05176e-05L1479 345Z" fill="#F073DA"/>
+      </svg>
+    </div>
+    <div data-layer="Rectangle 1" class="Rectangle1" style="width: 756px; height: 1180px; left: 1180px; top: 3247px; position: absolute; transform: rotate(90deg); transform-origin: top left; background: linear-gradient(180deg, rgba(74, 62, 254, 0) 21%, #4A3EFE 90%)"></div>
+    <div data-layer="© 2025 Zain Website. All rights reserved" class="2025ZainWebsiteAllRightsReserved" style="left: 486px; top: 3548px; position: absolute; color: white; font-size: 20px; font-family: sans-serif; font-weight: 500; word-wrap: break-word">© 2025 Zain Website. All rights reserved</div>
+    <div data-layer="Line 2" class="Line2" style="width: 1666px; height: 0px; left: -66px; top: 3527px; position: absolute; outline: 1px white solid; outline-offset: -0.50px"></div>
+    <div data-layer="QUICK LINKS" class="QuickLinks" style="left: 42px; top: 3257px; position: absolute; text-align: center; color: white; font-size: 30px; font-family: Poppins; font-weight: 700; line-height: 45px; word-wrap: break-word">QUICK LINKS</div>
+    <div data-layer="HOME" class="Home" style="left: 42px; top: 3319px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 500; line-height: 33px; word-wrap: break-word; text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36)">HOME</div>
+    <div data-layer="ABOUT ME" class="AboutMe" style="left: 42px; top: 3358px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 500; line-height: 33px; word-wrap: break-word; text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36)">ABOUT ME</div>
+    <div data-layer="MY NEIGHBORHOOD" class="MyNeighborhood" style="left: 42px; top: 3397px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 500; line-height: 33px; word-wrap: break-word; text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36)">MY NEIGHBORHOOD</div>
+    <div data-layer="MY UNIVERSITY" class="MyUniversity" style="left: 42px; top: 3436px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 500; line-height: 33px; word-wrap: break-word; text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36)">MY UNIVERSITY</div>
+    <div data-layer="CONTACT ME" class="ContactMe" style="left: 42px; top: 3475px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 500; line-height: 33px; word-wrap: break-word; text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36)">CONTACT ME</div>
+    <div data-layer="Whatsapp" class="Whatsapp" style="width: 115px; height: 38px; left: 528.69px; top: 3264px; position: absolute; text-align: center; color: #E6E8FF; font-size: 22px; font-family: Poppins; font-weight: 400; line-height: 33px; word-wrap: break-word">Whatsapp</div>
+    <div data-layer="+252 612652448" class="252612652448" style="left: 528.69px; top: 3287px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 700; line-height: 33px; word-wrap: break-word">+252 612652448</div>
+    <div data-svg-wrapper data-layer="Rectangle 15" class="Rectangle15" style="left: 471px; top: 3270px; position: absolute">
+      <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_d_1_488)">
+      <rect x="7.90625" y="3.90625" width="38.5938" height="38.5938" rx="7" fill="#EEEFFE"/>
+      </g>
+      <defs>
+      <filter id="filter0_d_1_488" x="0.90625" y="0.90625" width="52.5938" height="52.5938" filterUnits="userSpaceOnUse" color-sans-serifpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="3.5"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.36 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_488"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_488" result="shape"/>
+      </filter>
+      </defs>
+      </svg>
+    </div>
+    <div data-svg-wrapper data-layer="Whatsapp" class="Whatsapp" style="left: 470px; top: 3264.5px; position: absolute">
+      <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M37.2906 19.6597C34.959 17.3155 31.8543 16.0312 28.55 16.0312C21.7421 16.0312 16.1935 21.5798 16.1935 28.3878C16.1935 30.5698 16.7671 32.6895 17.8394 34.5598L16.0938 40.9688L22.6398 39.2481C24.4478 40.2331 26.4802 40.7568 28.55 40.7568C35.358 40.7568 40.9066 35.2082 40.9066 28.4003C40.9066 25.096 39.6223 21.9913 37.2906 19.6597ZM28.55 38.662C26.7047 38.662 24.8967 38.1633 23.3132 37.2281L22.9391 37.0037L19.0488 38.0261L20.0838 34.2356L19.8344 33.8491C18.8119 32.2157 18.2633 30.3204 18.2633 28.3878C18.2633 22.727 22.8768 18.1135 28.5376 18.1135C31.2807 18.1135 33.8617 19.1858 35.7944 21.131C37.7395 23.0761 38.7993 25.6571 38.7993 28.4003C38.8243 34.0611 34.2108 38.662 28.55 38.662ZM34.1859 30.9813C33.8742 30.8317 32.353 30.0835 32.0787 29.9713C31.7919 29.8716 31.5924 29.8217 31.3804 30.1209C31.1685 30.4327 30.5824 31.1309 30.4079 31.3304C30.2333 31.5424 30.0463 31.5673 29.7346 31.4052C29.4228 31.2556 28.4253 30.9189 27.2533 29.8716C26.3306 29.0486 25.7196 28.0387 25.5326 27.7269C25.358 27.4152 25.5077 27.2531 25.6698 27.091C25.8069 26.9539 25.9815 26.7294 26.1311 26.5549C26.2807 26.3803 26.3431 26.2432 26.4428 26.0437C26.5426 25.8317 26.4927 25.6571 26.4179 25.5075C26.3431 25.3579 25.7196 23.8367 25.4703 23.2133C25.2209 22.6148 24.959 22.6896 24.772 22.6771C24.585 22.6771 24.3855 22.6771 24.1735 22.6771C23.9615 22.6771 23.6373 22.7519 23.3506 23.0636C23.0763 23.3753 22.2783 24.1235 22.2783 25.6447C22.2783 27.1658 23.388 28.6372 23.5376 28.8367C23.6872 29.0486 25.7196 32.1658 28.8119 33.5C29.5475 33.8242 30.1211 34.0112 30.57 34.1483C31.3056 34.3853 31.9789 34.3478 32.5151 34.273C33.1136 34.1857 34.348 33.5249 34.5974 32.8017C34.8592 32.0785 34.8592 31.4676 34.7719 31.3304C34.6847 31.1933 34.4976 31.1309 34.1859 30.9813Z" fill="#4A3EFE"/>
+      </svg>
+    </div>
+    <div data-layer="Email" class="Email" style="width: 60px; height: 38px; left: 529px; top: 3348px; position: absolute; text-align: center; color: #E6E8FF; font-size: 22px; font-family: Poppins; font-weight: 400; line-height: 33px; word-wrap: break-word">Email</div>
+    <div data-layer="khaalidmaxamed1000@gmail.com" class="Khaalidmaxamed1000GmailCom" style="left: 529px; top: 3371px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 700; line-height: 33px; word-wrap: break-word">khaalidmaxamed1000@gmail.com</div>
+    <div data-svg-wrapper data-layer="Rectangle 15" class="Rectangle15" style="left: 477.91px; top: 3357.91px; position: absolute">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0.90625" y="0.90625" width="38.5938" height="38.5938" rx="7" fill="#EEEFFE"/>
+      </svg>
+    </div>
+    <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 486px; top: 3369px; position: absolute">
+      <svg width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20.7 0H2.3C1.035 0 0.0115 1.0125 0.0115 2.25L0 15.75C0 16.9875 1.035 18 2.3 18H20.7C21.965 18 23 16.9875 23 15.75V2.25C23 1.0125 21.965 0 20.7 0ZM20.7 4.5L11.5 10.125L2.3 4.5V2.25L11.5 7.875L20.7 2.25V4.5Z" fill="#4A3EFE"/>
+      </svg>
+    </div>
+    <div data-layer="Location" class="Location" style="width: 94px; height: 38px; left: 529px; top: 3430px; position: absolute; text-align: center; color: #E6E8FF; font-size: 22px; font-family: Poppins; font-weight: 400; line-height: 33px; word-wrap: break-word">Location</div>
+    <div data-layer="Mogadishu-Somalia" class="MogadishuSomalia" style="left: 529px; top: 3453px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 700; line-height: 33px; word-wrap: break-word">Mogadishu-Somalia</div>
+    <div data-svg-wrapper data-layer="Rectangle 15" class="Rectangle15" style="left: 477.91px; top: 3439.91px; position: absolute">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0.90625" y="0.90625" width="38.5938" height="38.5938" rx="7" fill="#EEEFFE"/>
+      </svg>
+    </div>
+    <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 489px; top: 3447px; position: absolute">
+      <svg width="18" height="26" viewBox="0 0 18 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9 0C4.02429 0 0 4.069 0 9.1C0 15.925 9 26 9 26C9 26 18 15.925 18 9.1C18 4.069 13.9757 0 9 0ZM9 12.35C7.22571 12.35 5.78571 10.894 5.78571 9.1C5.78571 7.306 7.22571 5.85 9 5.85C10.7743 5.85 12.2143 7.306 12.2143 9.1C12.2143 10.894 10.7743 12.35 9 12.35Z" fill="#4A3EFE"/>
+      </svg>
+    </div>
+    <div data-layer="Follow Us" class="FollowUs" style="left: 1144px; top: 3338px; position: absolute; text-align: center; color: white; font-size: 26px; font-family: Poppins; font-weight: 700; line-height: 39px; word-wrap: break-word">Follow Us </div>
+    <div data-svg-wrapper data-layer="Rectangle 16" class="Rectangle16" style="left: 1147px; top: 3380px; position: absolute">
+      <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_d_1_512)">
+      <rect x="7" y="3" width="42" height="42" rx="5" fill="#EEEFFE"/>
+      </g>
+      <defs>
+      <filter id="filter0_d_1_512" x="0" y="0" width="56" height="56" filterUnits="userSpaceOnUse" color-sans-serifpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="3.5"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.36 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_512"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_512" result="shape"/>
+      </filter>
+      </defs>
+      </svg>
+    </div>
+    <div data-layer="F" class="F" style="left: 1156px; top: 3376px; position: absolute; text-align: center; color: #EEEFFE; font-size: 36px; font-family: Poppins; font-weight: 700; text-decoration: underline; line-height: 54px; word-wrap: break-word">F</div>
+    <div data-svg-wrapper data-layer="Facebook" class="Facebook" style="left: 1159px; top: 3389px; position: absolute">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M27.5 15C27.5 8.1 21.9 2.5 15 2.5C8.1 2.5 2.5 8.1 2.5 15C2.5 21.05 6.8 26.0875 12.5 27.25V18.75H10V15H12.5V11.875C12.5 9.4625 14.4625 7.5 16.875 7.5H20V11.25H17.5C16.8125 11.25 16.25 11.8125 16.25 12.5V15H20V18.75H16.25V27.4375C22.5625 26.8125 27.5 21.4875 27.5 15Z" fill="#4A3EFE"/>
+      </svg>
+    </div>
+    <div data-svg-wrapper data-layer="Rectangle 17" class="Rectangle17" style="left: 1208px; top: 3380px; position: absolute">
+      <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_d_1_517)">
+      <rect x="7" y="3" width="42" height="42" rx="5" fill="#EEEFFE"/>
+      </g>
+      <defs>
+      <filter id="filter0_d_1_517" x="0" y="0" width="56" height="56" filterUnits="userSpaceOnUse" color-sans-serifpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="3.5"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.36 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_517"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_517" result="shape"/>
+      </filter>
+      </defs>
+      </svg>
+    </div>
+    <div data-layer="X." class="X" style="width: 43px; left: 1212px; top: 3376px; position: absolute; text-align: center"><span style="color: #EEEFFE; font-size: 36px; font-family: Poppins; font-weight: 700; text-decoration: underline; line-height: 54px; word-wrap: break-word">X</span><span style="color: #EEEFFE; font-size: 36px; font-family: Poppins; font-weight: 700; line-height: 54px; word-wrap: break-word">.</span></div>
+    <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 1223px; top: 3392px; position: absolute">
+      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0L9.62584 14.0625L0.203878 25H2.29138L10.5478 15.4091L17.1129 25H25L14.9433 10.3092L23.8178 0H21.7367L14.0201 8.95868L7.88711 0H0ZM2.49269 1.31579H7.19598L22.5073 23.6842H17.804L2.49269 1.31579Z" fill="#4A3EFE"/>
+      </svg>
+    </div>
+    <div data-svg-wrapper data-layer="Rectangle 18" class="Rectangle18" style="left: 1269px; top: 3380px; position: absolute">
+      <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_d_1_521)">
+      <rect x="7" y="3" width="42" height="42" rx="5" fill="#EEEFFE"/>
+      </g>
+      <defs>
+      <filter id="filter0_d_1_521" x="0" y="0" width="56" height="56" filterUnits="userSpaceOnUse" color-sans-serifpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="3.5"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.36 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_521"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_521" result="shape"/>
+      </filter>
+      </defs>
+      </svg>
+    </div>
+    <div data-layer="TikTok" class="Tiktok" style="width: 57px; height: 57px; left: 1261px; top: 3373px; position: absolute; overflow: hidden">
+      <div data-layer="Vector" class="Vector" style="width: 42.75px; height: 42.75px; left: 7.12px; top: 7.12px; position: absolute; background: linear-gradient(180deg, rgba(52, 52, 52, 0) 100%)"></div>
+      <div data-layer="TI" class="Ti" style="width: 40px; left: 13px; top: 1px; position: absolute; text-align: center; color: #EEEFFE; font-size: 36px; font-family: Poppins; font-weight: 700; text-decoration: underline; line-height: 54px; word-wrap: break-word">TI</div>
+      <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 25px; top: 19px; position: absolute">
+        <svg width="23" height="28" viewBox="0 0 23 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6846 9.47081C17.5561 10.8079 19.8491 11.5941 22.3251 11.5941V6.831C21.856 6.831 21.3893 6.78231 20.931 6.68493V10.4339C18.455 10.4339 16.1631 9.64656 14.2905 8.31062V18.0291C14.2905 22.8907 10.3468 26.8321 5.48278 26.8321C3.66828 26.8321 1.98084 26.2834 0.57959 25.3429C2.17915 26.9769 4.40928 27.9911 6.8769 27.9911C11.7409 27.9911 15.6846 24.0497 15.6846 19.1881V9.47081ZM17.4053 4.66619C16.4493 3.62237 15.8211 2.27219 15.6846 0.779498V0.166748H14.3629C14.6954 2.06319 15.8306 3.68412 17.4053 4.66619ZM3.6564 21.613C3.12203 20.9124 2.83346 20.0562 2.83465 19.1751C2.83465 16.9509 4.63846 15.1482 6.86384 15.1482C7.27828 15.1482 7.69034 15.2112 8.08578 15.3371V10.4683C7.62384 10.4054 7.15834 10.3781 6.69165 10.3876V14.1769C6.29621 14.051 5.88415 13.9881 5.46853 13.9881C3.24315 13.9881 1.43934 15.7907 1.43934 18.0149C1.44053 19.5883 2.34184 20.9504 3.6564 21.613Z" fill="#4A3EFE"/>
+        </svg>
+      </div>
+      <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 22.49px; top: 19px; position: absolute">
+        <svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2902 8.31062C18.1617 9.64775 20.4547 10.4339 22.9307 10.4339V6.68493C21.5484 6.39043 20.3253 5.66843 19.405 4.665C17.8303 3.68293 16.6963 2.06319 16.3638 0.166748H12.8927V19.1881C12.8844 21.4052 11.0842 23.2007 8.86354 23.2007C7.55491 23.2007 6.39235 22.5772 5.6561 21.6118C4.34154 20.9492 3.44022 19.5871 3.44022 18.0149C3.44022 15.7907 5.24404 13.9881 7.46941 13.9881C7.89573 13.9881 8.3066 14.0546 8.69254 14.1769V10.3887C3.91404 10.4873 0.0712891 14.3894 0.0712891 19.1893C0.0712891 21.5857 1.02841 23.7576 2.58166 25.3441C3.98291 26.2846 5.67035 26.8332 7.48485 26.8332C12.3488 26.8332 16.2925 22.8919 16.2925 18.0303L16.2902 8.31062Z" fill="#4A3EFE"/>
+        </svg>
+      </div>
+      <div data-layer="Vector" class="Vector" style="width: 24.26px; height: 26.34px; left: 15.67px; top: 14.01px; position: absolute; background: rgba(239, 115, 218, 0)"></div>
+    </div>
+    <div data-layer="Container" class="Container" style="width: 1200px; height: 750.22px; left: 137px; top: 2500px; position: absolute">
+      <div data-layer="Container" class="Container" style="width: 1136px; height: 626.38px; left: 32px; top: 123.84px; position: absolute">
+        <div data-layer="Background+Shadow" class="BackgroundShadow" style="width: 508px; height: 280px; left: -82px; top: -2.84px; position: absolute; background: #E6E8FF; box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05); border-radius: 8px">
+          <div data-layer="Heading 3" class="Heading3" style="width: 460.33px; height: 35.34px; left: 50px; top: 24px; position: absolute">
+            <div data-layer="Container" class="Container" style="width: 30px; height: 24px; left: 0px; top: 5.68px; position: absolute">
+              <div data-layer="Symbol" class="Symbol" style="width: 30.38px; height: 24px; left: 0px; top: 0px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #4A3EFE; font-size: 24px; font-family: Font Awesome 5 Free; font-weight: 900; line-height: 24px; word-wrap: break-word"></div>
+            </div>
+            <div data-layer="Kulliyadda Caafimaadka" class="KulliyaddaCaafimaadka" style="width: 244.87px; height: 23px; left: 42.80px; top: 6px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #4A3EFE; font-size: 20.80px; font-family: sans-serif; font-weight: 700; line-height: 35.36px; word-wrap: break-word">Kulliyadda Caafimaadka</div>
+          </div>
+          <div data-layer="List" class="List" style="width: 460.33px; height: 219.94px; left: 50px; top: 75.35px; position: absolute">
+            <div data-layer="Item" class="Item" style="width: 426px; height: 44px; left: -10px; top: -0.35px; position: absolute; border-bottom: 1px #E2E8F0 solid">
+              <div data-layer="Container" class="Container" style="width: 11.20px; height: 12.80px; left: 0px; top: 15.19px; position: absolute">
+                <div data-layer="Symbol" class="Symbol" style="width: 11.53px; height: 13px; left: 0px; top: -1px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #4A3EFE; font-size: 12.80px; font-family: Font Awesome 5 Free; font-weight: 900; line-height: 12.80px; word-wrap: break-word"></div>
+              </div>
+              <div data-layer="Daawo (Medicine)" class="DaawoMedicine" style="width: 136.74px; height: 17px; left: 19.20px; top: 13px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #1E293B; font-size: 16px; font-family: sans-serif; font-weight: 400; line-height: 27.20px; word-wrap: break-word">Daawo (Medicine)</div>
+            </div>
+            <div data-layer="Item" class="Item" style="width: 302px; height: 44px; left: 219px; top: -0.35px; position: absolute">
+              <div data-layer="Container" class="Container" style="width: 11.20px; height: 12.80px; left: 0px; top: 15.18px; position: absolute">
+                <div data-layer="Symbol" class="Symbol" style="width: 11.53px; height: 13px; left: 0px; top: -1px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #4A3EFE; font-size: 12.80px; font-family: Font Awesome 5 Free; font-weight: 900; line-height: 12.80px; word-wrap: break-word"></div>
+              </div>
+              <div data-layer="Kalkaalisada (Nursing)" class="KalkaalisadaNursing" style="width: 168.67px; height: 17px; left: 19.20px; top: 13px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #1E293B; font-size: 16px; font-family: sans-serif; font-weight: 400; line-height: 27.20px; word-wrap: break-word">Kalkaalisada (Nursing)</div>
+            </div>
+            <div data-layer="Item" class="Item" style="width: 460.33px; height: 44.19px; left: -10px; top: 55.65px; position: absolute; border-bottom: 1px #E2E8F0 solid">
+              <div data-layer="Container" class="Container" style="width: 11.20px; height: 12.80px; left: 0px; top: 15.19px; position: absolute">
+                <div data-layer="Symbol" class="Symbol" style="width: 11.53px; height: 13px; left: 0px; top: -1px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #4A3EFE; font-size: 12.80px; font-family: Font Awesome 5 Free; font-weight: 900; line-height: 12.80px; word-wrap: break-word"></div>
+              </div>
+              <div data-layer="Farmashiyaha (Pharmacy)" class="FarmashiyahaPharmacy" style="width: 196.46px; height: 17px; left: 19.20px; top: 13px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #1E293B; font-size: 16px; font-family: sans-serif; font-weight: 400; line-height: 27.20px; word-wrap: break-word">Farmashiyaha (Pharmacy)</div>
+            </div>
+            <div data-layer="Item" class="Item" style="width: 247px; height: 44px; left: 219px; top: 55.65px; position: absolute; border-bottom: 1px #E2E8F0 solid">
+              <div data-layer="Container" class="Container" style="width: 11.20px; height: 12.80px; left: 0px; top: 15.19px; position: absolute">
+                <div data-layer="Symbol" class="Symbol" style="width: 11.53px; height: 13px; left: 0px; top: -1px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #4A3EFE; font-size: 12.80px; font-family: Font Awesome 5 Free; font-weight: 900; line-height: 12.80px; word-wrap: break-word"></div>
+              </div>
+              <div data-layer="Ilkaha (Dentistry)" class="IlkahaDentistry" style="width: 129.55px; height: 17px; left: 19.20px; top: 13px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #1E293B; font-size: 16px; font-family: sans-serif; font-weight: 400; line-height: 27.20px; word-wrap: break-word">Ilkaha (Dentistry)</div>
+            </div>
+          </div>
+        </div>
+        <div data-layer="Background+Shadow" class="BackgroundShadow" style="width: 601px; height: 275px; left: 584px; top: 310.16px; position: absolute; background: #E6E8FF; box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05); border-radius: 8px">
+          <div data-layer="Heading 3" class="Heading3" style="width: 553.34px; height: 35.34px; left: 65px; top: 24px; position: absolute">
+            <div data-layer="Container" class="Container" style="width: 24px; height: 24px; left: 0px; top: 5.67px; position: absolute">
+              <div data-layer="Symbol" class="Symbol" style="width: 24.34px; height: 24px; left: 0px; top: 0px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #4A3EFE; font-size: 24px; font-family: Font Awesome 5 Free; font-weight: 900; line-height: 24px; word-wrap: break-word"></div>
+            </div>
+            <div data-layer="Sharciga & Siyaasadda" class="SharcigaSiyaasadda" style="width: 231.05px; height: 23px; left: 36.79px; top: 6px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #4A3EFE; font-size: 20.80px; font-family: sans-serif; font-weight: 700; line-height: 35.36px; word-wrap: break-word">Sharciga & Siyaasadda</div>
+          </div>
+          <div data-layer="List" class="List" style="width: 553.34px; height: 131.56px; left: 65px; top: 75.34px; position: absolute">
+            <div data-layer="Item" class="Item" style="width: 553.34px; height: 44.19px; left: 0px; top: 0px; position: absolute; border-bottom: 1px #E2E8F0 solid">
+              <div data-layer="Container" class="Container" style="width: 11.20px; height: 12.80px; left: 0px; top: 15.19px; position: absolute">
+                <div data-layer="Symbol" class="Symbol" style="width: 11.53px; height: 13px; left: 0px; top: -1px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #4A3EFE; font-size: 12.80px; font-family: Font Awesome 5 Free; font-weight: 900; line-height: 12.80px; word-wrap: break-word"></div>
+              </div>
+              <div data-layer="Sharciga iyo Caddaaladda" class="SharcigaIyoCaddaaladda" style="width: 197.08px; height: 17px; left: 19.20px; top: 13px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #1E293B; font-size: 16px; font-family: sans-serif; font-weight: 400; line-height: 27.20px; word-wrap: break-word">Sharciga iyo Caddaaladda</div>
+              <div data-layer="Item" class="Item" style="width: 326px; height: 44px; left: 239px; top: -1.34px; position: absolute">
+                <div data-layer="Container" class="Container" style="width: 11.20px; height: 12.80px; left: 0px; top: 15.18px; position: absolute">
+                  <div data-layer="Symbol" class="Symbol" style="width: 11.53px; height: 13px; left: 0px; top: -1px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #4A3EFE; font-size: 12.80px; font-family: Font Awesome 5 Free; font-weight: 900; line-height: 12.80px; word-wrap: break-word"></div>
+                </div>
+                <div data-layer="Cilmiga Siyaasadda" class="CilmigaSiyaasadda" style="width: 147.20px; height: 17px; left: 19.20px; top: 13px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #1E293B; font-size: 16px; font-family: sans-serif; font-weight: 400; line-height: 27.20px; word-wrap: break-word">Cilmiga Siyaasadda</div>
+              </div>
+            </div>
+            <div data-layer="Item" class="Item" style="width: 553.34px; height: 43.19px; left: 0px; top: 53.66px; position: absolute">
+              <div data-layer="Container" class="Container" style="width: 11.20px; height: 12.80px; left: 0px; top: 15.19px; position: absolute">
+                <div data-layer="Symbol" class="Symbol" style="width: 11.53px; height: 13px; left: 0px; top: -1px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #4A3EFE; font-size: 12.80px; font-family: Font Awesome 5 Free; font-weight: 900; line-height: 12.80px; word-wrap: break-word"></div>
+              </div>
+              <div data-layer="Xiriirka Caalamiga" class="XiriirkaCaalamiga" style="width: 134.76px; height: 17px; left: 19.20px; top: 13px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #1E293B; font-size: 16px; font-family: sans-serif; font-weight: 400; line-height: 27.20px; word-wrap: break-word">Xiriirka Caalamiga</div>
+            </div>
+          </div>
+        </div>
+        <div data-layer="Background+Shadow" class="BackgroundShadow" style="width: 508px; height: 272px; left: -82px; top: 313.16px; position: absolute; background: #E6E8FF; box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05); border-radius: 8px">
+          <div data-layer="Heading 3" class="Heading3" style="width: 460.34px; height: 35.34px; left: 51px; top: 24px; position: absolute">
+            <div data-layer="Container" class="Container" style="width: 30px; height: 24px; left: 0px; top: 5.68px; position: absolute">
+              <div data-layer="Symbol" class="Symbol" style="width: 30.38px; height: 24px; left: 0px; top: 0px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #4A3EFE; font-size: 24px; font-family: Font Awesome 5 Free; font-weight: 900; line-height: 24px; word-wrap: break-word"></div>
+            </div>
+            <div data-layer="Sayniska & Tiknolojiyadda" class="SayniskaTiknolojiyadda" style="width: 265.24px; height: 23px; left: 42.79px; top: 6px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #4A3EFE; font-size: 20.80px; font-family: sans-serif; font-weight: 700; line-height: 35.36px; word-wrap: break-word">Sayniska & Tiknolojiyadda</div>
+          </div>
+          <div data-layer="List" class="List" style="width: 460.34px; height: 219.94px; left: 51px; top: 75.35px; position: absolute">
+            <div data-layer="Item" class="Item" style="width: 460.34px; height: 44.19px; left: 0px; top: 0px; position: absolute; border-bottom: 1px #E2E8F0 solid">
+              <div data-layer="Container" class="Container" style="width: 11.20px; height: 12.80px; left: 0px; top: 15.19px; position: absolute">
+                <div data-layer="Symbol" class="Symbol" style="width: 11.53px; height: 13px; left: 0px; top: -1px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #4A3EFE; font-size: 12.80px; font-family: Font Awesome 5 Free; font-weight: 900; line-height: 12.80px; word-wrap: break-word"></div>
+              </div>
+              <div data-layer="Cilmiga Kombuyuutarka" class="CilmigaKombuyuutarka" style="width: 190.10px; height: 17px; left: 19.20px; top: 13px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #1E293B; font-size: 16px; font-family: sans-serif; font-weight: 400; line-height: 27.20px; word-wrap: break-word">Cilmiga Kombuyuutarka</div>
+              <div data-layer="Item" class="Item" style="width: 258px; height: 44px; left: 234px; top: 0.65px; position: absolute">
+                <div data-layer="Container" class="Container" style="width: 11.20px; height: 12.80px; left: 0px; top: 15.19px; position: absolute">
+                  <div data-layer="Symbol" class="Symbol" style="width: 11.53px; height: 13px; left: 0px; top: -1px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #4A3EFE; font-size: 12.80px; font-family: Font Awesome 5 Free; font-weight: 900; line-height: 12.80px; word-wrap: break-word"></div>
+                </div>
+                <div data-layer="Chemistry" class="Chemistry" style="width: 77.44px; height: 17px; left: 19.20px; top: 13px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #1E293B; font-size: 16px; font-family: sans-serif; font-weight: 400; line-height: 27.20px; word-wrap: break-word">Chemistry</div>
+              </div>
+            </div>
+            <div data-layer="Item" class="Item" style="width: 460.34px; height: 44.19px; left: 0px; top: 56.65px; position: absolute; border-bottom: 1px #E2E8F0 solid">
+              <div data-layer="Container" class="Container" style="width: 11.20px; height: 12.80px; left: 0px; top: 15.19px; position: absolute">
+                <div data-layer="Symbol" class="Symbol" style="width: 11.53px; height: 13px; left: 0px; top: -1px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #4A3EFE; font-size: 12.80px; font-family: Font Awesome 5 Free; font-weight: 900; line-height: 12.80px; word-wrap: break-word"></div>
+              </div>
+              <div data-layer="Physics" class="Physics" style="width: 57.70px; height: 17px; left: 19.20px; top: 13px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #1E293B; font-size: 16px; font-family: sans-serif; font-weight: 400; line-height: 27.20px; word-wrap: break-word">Physics</div>
+              <div data-layer="Item" class="Item" style="width: 460.34px; height: 43.19px; left: 234px; top: 3px; position: absolute">
+                <div data-layer="Container" class="Container" style="width: 11.20px; height: 12.80px; left: 0px; top: 15.19px; position: absolute">
+                  <div data-layer="Symbol" class="Symbol" style="width: 11.53px; height: 13px; left: 0px; top: -1px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #4A3EFE; font-size: 12.80px; font-family: Font Awesome 5 Free; font-weight: 900; line-height: 12.80px; word-wrap: break-word"></div>
+                </div>
+                <div data-layer="Biology" class="Biology" style="width: 55.90px; height: 17px; left: 19.20px; top: 13px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #1E293B; font-size: 16px; font-family: sans-serif; font-weight: 400; line-height: 27.20px; word-wrap: break-word">Biology</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-layer="Background+Shadow" class="BackgroundShadow" style="width: 593px; height: 277px; left: 616px; top: 124px; position: absolute; background: #E6E8FF; box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05); border-radius: 8px">
+        <div data-layer="Heading 3" class="Heading3" style="width: 545.33px; height: 35.34px; left: 64px; top: 24px; position: absolute">
+          <div data-layer="Container" class="Container" style="width: 30px; height: 24px; left: 0px; top: 5.68px; position: absolute">
+            <div data-layer="Symbol" class="Symbol" style="width: 30.38px; height: 24px; left: 0px; top: 0px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #2563EB; font-size: 24px; font-family: Font Awesome 5 Free; font-weight: 900; line-height: 24px; word-wrap: break-word"></div>
+          </div>
+          <div data-layer="Kulliyadda Injineerinka" class="KulliyaddaInjineerinka" style="width: 230.08px; height: 23px; left: 42.80px; top: 6px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #4A3EFE; font-size: 20.80px; font-family: sans-serif; font-weight: 700; line-height: 35.36px; word-wrap: break-word">Kulliyadda Injineerinka</div>
+        </div>
+        <div data-layer="List" class="List" style="width: 545.33px; height: 175.75px; left: 64px; top: 75.35px; position: absolute">
+          <div data-layer="Item" class="Item" style="width: 545.33px; height: 44.19px; left: 0px; top: 0px; position: absolute">
+            <div data-layer="Container" class="Container" style="width: 11.20px; height: 12.80px; left: 0px; top: 15.19px; position: absolute">
+              <div data-layer="Symbol" class="Symbol" style="width: 11.53px; height: 13px; left: 0px; top: -1px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #4A3EFE; font-size: 12.80px; font-family: Font Awesome 5 Free; font-weight: 900; line-height: 12.80px; word-wrap: break-word"></div>
+            </div>
+            <div data-layer="Injineerinka Dhismaha" class="InjineerinkaDhismaha" style="width: 165.02px; height: 17px; left: 19.20px; top: 13px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #1E293B; font-size: 16px; font-family: sans-serif; font-weight: 400; line-height: 27.20px; word-wrap: break-word">Injineerinka Dhismaha</div>
+            <div data-layer="Item" class="Item" style="width: 366px; height: 44px; left: 244px; top: 0.65px; position: absolute">
+              <div data-layer="Container" class="Container" style="width: 11.20px; height: 12.80px; left: 0px; top: 15.18px; position: absolute">
+                <div data-layer="Symbol" class="Symbol" style="width: 11.53px; height: 13px; left: 0px; top: -1px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #4A3EFE; font-size: 12.80px; font-family: Font Awesome 5 Free; font-weight: 900; line-height: 12.80px; word-wrap: break-word"></div>
+              </div>
+              <div data-layer="Injineerinka Korontada" class="InjineerinkaKorontada" style="width: 168.27px; height: 17px; left: 19.20px; top: 13px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #1E293B; font-size: 16px; font-family: sans-serif; font-weight: 400; line-height: 27.20px; word-wrap: break-word">Injineerinka Korontada</div>
+            </div>
+          </div>
+          <div data-layer="Item" class="Item" style="width: 545.33px; height: 44.19px; left: 0px; top: 54.65px; position: absolute; border-bottom: 1px #E2E8F0 solid">
+            <div data-layer="Container" class="Container" style="width: 11.20px; height: 12.80px; left: 0px; top: 15.19px; position: absolute">
+              <div data-layer="Symbol" class="Symbol" style="width: 11.53px; height: 13px; left: 0px; top: -1px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #4A3EFE; font-size: 12.80px; font-family: Font Awesome 5 Free; font-weight: 900; line-height: 12.80px; word-wrap: break-word"></div>
+            </div>
+            <div data-layer="Injineerinka Kombuyuutarka" class="InjineerinkaKombuyuutarka" style="width: 209.02px; height: 17px; left: 19.20px; top: 13px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #1E293B; font-size: 16px; font-family: sans-serif; font-weight: 400; line-height: 27.20px; word-wrap: break-word">Injineerinka Kombuyuutarka</div>
+            <div data-layer="Item" class="Item" style="width: 545.33px; height: 43.19px; left: 244px; top: 3px; position: absolute">
+              <div data-layer="Container" class="Container" style="width: 11.20px; height: 12.80px; left: 0px; top: 15.19px; position: absolute">
+                <div data-layer="Symbol" class="Symbol" style="width: 11.53px; height: 13px; left: 0px; top: -1px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #4A3EFE; font-size: 12.80px; font-family: Font Awesome 5 Free; font-weight: 900; line-height: 12.80px; word-wrap: break-word"></div>
+              </div>
+              <div data-layer="Injineerinka Mechatronics" class="InjineerinkaMechatronics" style="width: 193.04px; height: 17px; left: 19.20px; top: 13px; position: absolute; justify-content: center; display: flex; flex-direction: column; color: #1E293B; font-size: 16px; font-family: sans-serif; font-weight: 400; line-height: 27.20px; word-wrap: break-word">Injineerinka Mechatronics</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+</body>
+</html>

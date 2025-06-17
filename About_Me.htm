@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+</head>
+<body>
+  <div data-layer="Desktop -2" class="Desktop2" style="width: 1440px; height: 3340px; position: relative;margin-right:auto; margin-left: auto; background: white; overflow: hidden">
+    <div data-layer="Rectangle 1010" class="Rectangle1010" style="width: 1530px; height: 845px; left: -45px; top: -173px; position: absolute; background: #D9D9D9"></div>
+    <div data-layer="Rectangle 20" class="Rectangle20" style="width: 1440px; height: 742px; left: 0px; top: 7px; position: absolute; background: linear-gradient(270deg, #F073DA 0%, #4A3EFE 100%)"></div>
+    <div data-layer="Ellipse 1" class="Ellipse1" style="width: 476px; height: 476px; left: 898px; top: 168px; position: absolute; background: #8950F8; border-radius: 9999px"></div>
+    <img data-layer="Rectangle 2" class="Rectangle2" style="width: 509px; height: 556px; left: 883px; top: 193px; position: absolute" src="me2.png" />
+    <div data-layer="Rectangle 1" class="Rectangle1" style="width: 1713px; height: 111px; left: -56px; top: 638px; position: absolute; background: linear-gradient(180deg, rgba(234, 113, 219, 0) 0%, rgba(234, 113, 219, 0.48) 100%)"></div>
+    <div data-layer="Rectangle 1" class="Rectangle1" style="width: 756px; height: 1474px; left: 1440px; top: -7px; position: absolute; transform: rotate(90deg); transform-origin: top left; background: linear-gradient(180deg, rgba(74, 62, 254, 0) 43%, #4A3EFE 90%)"></div>
+    <div data-layer="Hi, I’m Khalid -- a creative graphic designer with a love for visuals that tell a story" class="HiIMKhalidACreativeGraphicDesignerWithALoveForVisualsThatTellAStory" style="left: 77px; top: 216px; position: absolute; color: white; font-size: 45px; font-family: sans-serif,Helvatica; font-weight: 700; word-wrap: break-word">Hi, I’m Khalid --<br/>a creative graphic designer<br/>with a love for <br/>visuals that tell a <br/>story</div>
+    <div data-layer="Rectangle 6" class="Rectangle6" style="width: 140px; height: 45px; left: 77px; top: 540px; position: absolute; opacity: 0.21; background: rgba(217, 217, 217, 0.70); box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36); border-radius: 22.50px"></div>
+    <a href="About_Me.htm"><div data-layer="About Me" class="AboutMe" style="width: 94px; height: 25px; left: 100px; top: 550px; position: absolute; color: white; font-size: 20px; font-family: sans-serif; font-weight: 500; word-wrap: break-word;text-decoration: none;z-index: 1000;">About Me</div></a>
+    <div data-layer="Rectangle 6" class="Rectangle6" style="width: 140px; height: 45px; left: 226px; top: 540px; position: absolute; opacity: 0.21; background: rgba(217, 217, 217, 0.70); box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36); border-radius: 22.50px"></div>
+    <a href="Contact_me.htm"><div data-layer="Contact Me" class="ContactMe" style="width: 113px; height: 25px; left: 239px; top: 550px; position: absolute; color: white; font-size: 20px; font-family: sans-serif; font-weight: 500; word-wrap: break-word;text-decoration: none;z-index: 1000;">Contact Me</div></a>
+
+    <div data-layer="Rectangle 8" class="Rectangle8" style="width: 1622px; height: 80px; left: -91px; top: -8px; position: absolute; background: #EEEFFE"></div>
+    <style>
+  a:hover { color: #000066; }
+  label:hover { color: #000066; }
+
+  .nav-link {
+    position: absolute;
+    color: #4A3EFE;
+    font-size: 24px;
+    font-family: Tajawal, sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    left: -50px;
+    top: -16px;
+    z-index: 1000;
+  }
+
+  .nav-container {
+    position: relative;
+  }
+
+  .dropdown {
+    position: absolute;
+    top: 38px;
+    left: 1340px;
+    cursor: pointer;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .dropdown-label {
+    color: #4A3EFE;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: Tajawal, sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    position: relative;
+    z-index: 1000;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1001;
+    min-width: 160px;
+  }
+
+  #menu-toggle:checked + .dropdown-label + .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    display: block;
+    padding: 8px 12px;
+    font-size: 18px;
+    color: #4A3EFE;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #EEEFFE;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  #menu-toggle:checked ~ .overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+  }
+</style>
+
+<div data-layer="Nav" class="nav-link" style="position: relative;">
+  <a href="Home.htm" class="nav-link" style="left: 506px;top: 38px;">HOME</a>
+  <a href="About_Me.htm" class="nav-link" style="left: 601.71px;top: 38px;">ABOUT ME</a>
+  <a href="About_My_Neighberhood.htm" class="nav-link" style="left: 742.76px;top: 38px;">MY NEIGHBORHOOD</a>
+  <a href="About_My_University.htm" class="nav-link" style="left: 983.55px;top: 38px;">MY UNIVERSITY</a>
+  <a href="Contact_me.htm" class="nav-link" style="left: 1176.99px; top: 38px;">CONTACT ME</a>
+
+  <div class="dropdown nav-link">
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="dropdown-label">OTHERS</label>
+
+    <div class="dropdown-content">
+      <a href="Ch6.htm">Chapter 6</a>
+      <a href="Ch7.htm">Chapter 7</a>
+      <a href="Ch8.htm">Chapter 8</a>
+      <a href="Ch9.htm">Chapter 9</a>
+      <a href="Ch10.htm">Chapter 10</a>
+    </div>
+
+    <label for="menu-toggle" class="overlay"></label>
+  </div>
+</div>
+  <div data-layer="Rectangle 5" class="Rectangle5" style="width: 225px; height: 42px; left: 127px; top: 15px; position: absolute; background: #4A3EFE; box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36); border-radius: 5px"></div>
+  <div data-layer="ZAIN WEBSITE" class="ZainWebsite" style=" height: 34px; left: 140px; top: 13px; position: absolute; text-align: center; color: white; font-size: 32px; font-family: Tajawal; font-weight: 900; line-height: 48px; word-wrap: break-word">ZAIN WEBSITE</div>
+  
+    <div data-layer="66" style="width: 1504px; height: 812px; left: -30px; top: 928px; position: absolute; background: rgba(255, 255, 255, 0)"></div>
+    <div data-layer="© 2025 Khalid Mohamed Farah. All rights reserved" class="2025KhalidMohamedFarahAllRightsReserved" style="left: 471px; top: 1441px; position: absolute; color: white; font-size: 20px; font-family: sans-serif; font-weight: 500; word-wrap: break-word">© 2025 Khalid Mohamed Farah. All rights reserved</div>
+    <div data-layer="Rectangle 7" class="Rectangle7" style="width: 1266px; height: 491px; left: 87px; top: 851px; position: absolute; background: #EEEFFE; border-radius: 21px"></div>
+    <div data-layer="Rectangle 8" class="Rectangle8" style="width: 310px; height: 334px; left: 119px; top: 890px; position: absolute; background: #E6E8FF; border-radius: 21px; border: 1px #4A3EFE solid"></div>
+    <img data-layer="Rectangle 9" class="Rectangle9" style="width: 310px; height: 334px; left: 120px; top: 892px; position: absolute; border-radius: 21px" src="me2.png"/> 
+    <div data-layer="Khalid Mohamed Farah" class="KhalidMohamedFarah" style="width: 233px; height: 32px; left: 188px; top: 1251px; position: absolute; color: #4A3EFE; font-size: 20px; font-family: Lato; font-weight: 800; line-height: 24px; word-wrap: break-word">Khalid Mohamed Farah</div>
+    <div data-layer="Graphic Designer" class="GraphicDesigner" style="width: 158px; height: 26px; left: 216px; top: 1271px; position: absolute; color: #EF73DA; font-size: 20px; font-family: Lato; font-weight: 300; line-height: 24px; word-wrap: break-word">Graphic Designer</div>
+    <div data-layer="I'm Khalid Mohamed Farah, a passionate creative and computer science student with a strong foundation in technology and design. Born and raised in Hodan District, Mogadishu, I have always been driven by curiosity and a desire to grow. I graduated from Zubeir School in Dherkenley after completing my primary to secondary education in the 2022–2023 academic year. Currently, I'm studying Computer Science at the Somali National University – Geheyr Campus, under the Faculty of Science. Alongside my academic path, I studied Graphic Design at the Somali Digital Media Academy (SODMA), which helped me sharpen my creative skills and deepen my understanding of visual communication." class="IMKhalidMohamedFarahAPassionateCreativeAndComputerScienceStudentWithAStrongFoundationInTechnologyAndDesignBornAndRaisedInHodanDistrictMogadishuIHaveAlwaysBeenDrivenByCuriosityAndADesireToGrowIGraduatedFromZubeirSchoolInDherkenleyAfterCompletingMyPrimaryToSecondaryEducationInThe20222023AcademicYearCurrentlyIMStudyingComputerScienceAtTheSomaliNationalUniversityGeheyrCampusUnderTheFacultyOfScienceAlongsideMyAcademicPathIStudiedGraphicDesignAtTheSomaliDigitalMediaAcademySodmaWhichHelpedMeSharpenMyCreativeSkillsAndDeepenMyUnderstandingOfVisualCommunication" style="width: 773px; height: 326px; left: 548px; top: 924px; position: absolute"><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word">I'm </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">Khalid Mohamed Farah</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word">, a passionate creative and computer science student with a strong foundation in technology and design. Born and raised in </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">Hodan District</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word">, </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">Mogadishu</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word">, I have always been driven by curiosity and a desire to grow.<br/><br/>I graduated from </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">Zubeir School</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word"> in </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">Dherkenley</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word"> after completing my primary to secondary education in the </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">2022–2023 academic year</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word">.<br/><br/>Currently, I'm studying </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">Computer Science</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word"> at the </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">Somali National University</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word"> – </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">Geheyr Campus</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word">, under the </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">Faculty of Science</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word">.<br/><br/>Alongside my academic path, I studied </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 600; line-height: 24px; word-wrap: break-word">Graphic Design</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word"> at the </span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 500; line-height: 24px; word-wrap: break-word">Somali Digital Media Academy (SODMA)</span><span style="color: black; font-size: 20px; font-family: Lato; font-weight: 400; line-height: 24px; word-wrap: break-word">, which helped me sharpen my creative skills and deepen my understanding of visual communication.</span></div>
+    <div data-layer="About Me" class="AboutMe" style="left: 585px; top: 870px; position: absolute"><span style="color: #4A3EFE; font-size: 28px; font-family: Lato; font-weight: 900; line-height: 33.60px; word-wrap: break-word">About </span><span style="color: #F073DA; font-size: 28px; font-family: Lato; font-weight: 900; line-height: 33.60px; word-wrap: break-word">Me</span></div>
+    <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 547px; top: 871.17px; position: absolute">
+      <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M13.5 13.8923C17.2294 13.8923 20.25 10.8226 20.25 7.03256C20.25 3.24254 17.2294 0.172791 13.5 0.172791C9.77063 0.172791 6.75 3.24254 6.75 7.03256C6.75 10.8226 9.77063 13.8923 13.5 13.8923ZM13.5 17.3222C8.99438 17.3222 0 19.6202 0 24.182V27.6119H27V24.182C27 19.6202 18.0056 17.3222 13.5 17.3222Z" fill="url(#paint0_linear_1_173)"/>
+      <defs>
+      <linearGradient id="paint0_linear_1_173" x1="0" y1="13.8923" x2="27" y2="13.8923" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4A3EFE"/>
+      <stop offset="1" stop-color="#F073DA"/>
+      </linearGradient>
+      </defs>
+      </svg>
+    </div>
+    <div data-layer="EDUCATIONS AND SKILLS" class="EducationsAndSkills" style="left: 511px; top: 1376px; position: absolute; color: #4A3EFE; font-size: 33px; font-family: Poppins; font-weight: 900; line-height: 39.60px; word-wrap: break-word; text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.28)">EDUCATIONS AND SKILLS</div>
+    <div data-layer="Group 2608648" class="Group2608648" style="width: 1316px; height: 913px; position: relative">
+    <div data-layer="Rectangle 1009" class="Rectangle1009" style="width: 590px; height: 415px; left: 20px; top: 1460px; position: absolute; background: #EEEFFE; box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.40); border-radius: 27px; border: 1px #4A3EFE solid"></div>
+    <div data-layer="Education" class="Education" style="left: 254px; top: 1490px; position: absolute; color: #4A3EFE; font-size: 28px; font-family: Lato; font-weight: 900; line-height: 33.60px; word-wrap: break-word">Education</div>
+    <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 212px; top: 1495px; position: absolute">
+      <svg width="33" height="26" viewBox="0 0 33 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6 14.4191V19.9194L16.5 25.1722L27 19.9194V14.4191L16.5 19.6719L6 14.4191ZM16.5 0.420654L0 8.67118L16.5 16.9217L30 10.17V19.6719H33V8.67118L16.5 0.420654Z" fill="url(#paint0_linear_1_246)"/>
+      <defs>
+      <linearGradient id="paint0_linear_1_246" x1="0" y1="12.7964" x2="33" y2="12.7964" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4A3EFE"/>
+      <stop offset="1" stop-color="#F073DA"/>
+      </linearGradient>
+      </defs>
+      </svg>
+    </div>
+    <div data-layer="Bachelor of Science in Computer Science   Somali National University – Geheyr Campus Graphic Design Certificate   Somali Digital Media Academy (SODMA) Qur’an Studies   Abdullahi Bin Mas’ud School Primary to Secondary Education   Zubeir School, Dherkenley" class="BachelorOfScienceInComputerScienceSomaliNationalUniversityGeheyrCampusGraphicDesignCertificateSomaliDigitalMediaAcademySodmaQurAnStudiesAbdullahiBinMasUdSchoolPrimaryToSecondaryEducationZubeirSchoolDherkenley" style="width: 557px; height: 279px; left: 40px; top: 1550px; position: absolute"><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 33.60px; word-wrap: break-word">Bachelor of Science in Computer Science</span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 400; line-height: 33.60px; word-wrap: break-word">   </span><span style="color: black; font-size: 28px; font-family: Lato; font-style: italic; font-weight: 300; line-height: 33.60px; word-wrap: break-word">Somali National University – Geheyr Campus<br/></span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 33.60px; word-wrap: break-word">Graphic Design Certificate</span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 400; line-height: 33.60px; word-wrap: break-word">   </span><span style="color: black; font-size: 28px; font-family: Lato; font-style: italic; font-weight: 300; line-height: 33.60px; word-wrap: break-word">Somali Digital Media Academy (SODMA)<br/></span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 33.60px; word-wrap: break-word">Qur’an Studies</span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 400; line-height: 33.60px; word-wrap: break-word">   </span><span style="color: black; font-size: 28px; font-family: Lato; font-style: italic; font-weight: 300; line-height: 33.60px; word-wrap: break-word">Abdullahi Bin Mas’ud School<br/></span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 33.60px; word-wrap: break-word">Primary to Secondary Education</span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 400; line-height: 33.60px; word-wrap: break-word">   </span><span style="color: black; font-size: 28px; font-family: Lato; font-style: italic; font-weight: 300; line-height: 33.60px; word-wrap: break-word">Zubeir School, Dherkenley</span></div>
+    <div data-layer="Rectangle 1009" class="Rectangle1009" style="width: 678px; height: 415px; left: 730px; top: 1460px; position: absolute; background: #EEEFFE; box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.40); border-radius: 27px; border: 1px #4A3EFE solid"></div>
+    <div data-layer="Creative Skills" class="CreativeSkills" style="left: 990px; top: 1490px; position: absolute; color: #4A3EFE; font-size: 28px; font-family: Lato; font-weight: 900; line-height: 33.60px; word-wrap: break-word">Creative Skills</div>
+    <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 950px; top: 1492px; position: absolute">
+      <svg width="21" height="26" viewBox="0 0 21 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10.5 25.1722C9.73 25.1722 9.07107 24.9301 8.5232 24.4458C7.9744 23.9607 7.7 23.3778 7.7 22.6971H13.3C13.3 23.3778 13.0261 23.9607 12.4782 24.4458C11.9294 24.9301 11.27 25.1722 10.5 25.1722ZM6.3 21.4595C5.90333 21.4595 5.57107 21.3407 5.3032 21.1031C5.0344 20.8663 4.9 20.5726 4.9 20.2219C4.9 19.8713 5.0344 19.5776 5.3032 19.3408C5.57107 19.1032 5.90333 18.9843 6.3 18.9843H14.7C15.0967 18.9843 15.4294 19.1032 15.6982 19.3408C15.9661 19.5776 16.1 19.8713 16.1 20.2219C16.1 20.5726 15.9661 20.8663 15.6982 21.1031C15.4294 21.3407 15.0967 21.4595 14.7 21.4595H6.3ZM5.25 17.7468C3.64 16.9011 2.36273 15.7666 1.4182 14.3434C0.472733 12.9202 0 11.3732 0 9.7025C0 7.12421 1.02107 4.93287 3.0632 3.12848C5.1044 1.32326 7.58333 0.420654 10.5 0.420654C13.4167 0.420654 15.8956 1.32326 17.9368 3.12848C19.9789 4.93287 21 7.12421 21 9.7025C21 11.3732 20.5277 12.9202 19.5832 14.3434C18.6377 15.7666 17.36 16.9011 15.75 17.7468H5.25Z" fill="url(#paint0_linear_1_253)"/>
+      <defs>
+      <linearGradient id="paint0_linear_1_253" x1="0" y1="12.7964" x2="21" y2="12.7964" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4A3EFE"/>
+      <stop offset="1" stop-color="#F073DA"/>
+      </linearGradient>
+      </defs>
+      </svg>
+    </div>
+    <div data-layer="Graphic Design (Photoshop, Illustrator, InDesign) Branding & Visual Identity Video Editing (Premiere Pro, After Effects) Photography (Portrait, Product, Event) Photo Editing & Retouching" class="GraphicDesignPhotoshopIllustratorIndesignBrandingVisualIdentityVideoEditingPremiereProAfterEffectsPhotographyPortraitProductEventPhotoEditingRetouching" style="width: 646px; height: 279px; left: 758px; top: 1550px; position: absolute"><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 47.60px; word-wrap: break-word">Graphic Design (</span><span style="color: black; font-size: 28px; font-family: Lato; font-style: italic; font-weight: 300; line-height: 47.60px; word-wrap: break-word">Photoshop, Illustrator, InDesign</span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 47.60px; word-wrap: break-word">)<br/>Branding & Visual Identity<br/>Video Editing (</span><span style="color: black; font-size: 28px; font-family: Lato; font-style: italic; font-weight: 300; line-height: 47.60px; word-wrap: break-word">Premiere Pro, After Effects</span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 47.60px; word-wrap: break-word">)<br/>Photography (</span><span style="color: black; font-size: 28px; font-family: Lato; font-style: italic; font-weight: 300; line-height: 47.60px; word-wrap: break-word">Portrait, Product, Event</span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 47.60px; word-wrap: break-word">)<br/>Photo Editing & Retouching</span></div>
+    <div data-layer="Rectangle 1009" class="Rectangle1009" style="width: 678px; height: 415px; left: 340px; top: 1955px; position: absolute; background: #EEEFFE; box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.40); border-radius: 27px; border: 1px #4A3EFE solid"></div>
+    <div data-layer="Technical Skills" class="TechnicalSkills" style="left: 590px; top: 1990px; position: absolute; color: #4A3EFE; font-size: 28px; font-family: Lato; font-weight: 900; line-height: 33.60px; word-wrap: break-word"> Technical Skills</div>
+    <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 545px; top: 1993px; position: absolute">
+      <svg width="38" height="26" viewBox="0 0 38 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M3.16667 25.7051C2.29583 25.7051 1.55061 25.4202 0.931 24.8504C0.310333 24.2797 0 23.5939 0 22.7931H6.33333C5.4625 22.7931 4.71728 22.5082 4.09767 21.9385C3.477 21.3677 3.16667 20.682 3.16667 19.8812V3.86544C3.16667 3.06466 3.477 2.37889 4.09767 1.80815C4.71728 1.23838 5.4625 0.953491 6.33333 0.953491H31.6667C32.5375 0.953491 33.2833 1.23838 33.9039 1.80815C34.5235 2.37889 34.8333 3.06466 34.8333 3.86544V19.8812C34.8333 20.682 34.5235 21.3677 33.9039 21.9385C33.2833 22.5082 32.5375 22.7931 31.6667 22.7931H38C38 23.5939 37.6902 24.2797 37.0706 24.8504C36.4499 25.4202 35.7042 25.7051 34.8333 25.7051H3.16667ZM19 24.2491C19.4486 24.2491 19.8249 24.1093 20.1289 23.8298C20.4319 23.5512 20.5833 23.2057 20.5833 22.7931C20.5833 22.3806 20.4319 22.035 20.1289 21.7565C19.8249 21.4769 19.4486 21.3372 19 21.3372C18.5514 21.3372 18.1756 21.4769 17.8727 21.7565C17.5687 22.035 17.4167 22.3806 17.4167 22.7931C17.4167 23.2057 17.5687 23.5512 17.8727 23.8298C18.1756 24.1093 18.5514 24.2491 19 24.2491Z" fill="url(#paint0_linear_1_260)"/>
+      <defs>
+      <linearGradient id="paint0_linear_1_260" x1="0" y1="13.3293" x2="38" y2="13.3293" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4A3EFE"/>
+      <stop offset="1" stop-color="#F073DA"/>
+      </linearGradient>
+      </defs>
+      </svg>
+    </div>
+    <div data-layer="Programming (HTML, CSS, Python) UI/UX Design Web Design Web Development Full-Stack Development" class="ProgrammingHtmlCssPythonUiUxDesignWebDesignWebDevelopmentFullStackDevelopment" style="width: 646px; height: 279px; left: 365px; top: 2040px; position: absolute"><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 47.60px; word-wrap: break-word">Programming (</span><span style="color: black; font-size: 28px; font-family: Lato; font-style: italic; font-weight: 300; line-height: 47.60px; word-wrap: break-word">HTML, CSS, Python</span><span style="color: black; font-size: 28px; font-family: Lato; font-weight: 600; line-height: 47.60px; word-wrap: break-word">)<br/>UI/UX Design<br/>Web Design<br/>Web Development<br/>Full-Stack Development</span></div>
+  </div>
+    <div data-layer="SOME OF MY DESIGNS FOR CIILEY TRAVEL AND CARGO" class="SomeOfMyDesignsForCiileyTravelAndCargo" style="left: 277px; top: 2409px; position: absolute; color: #4A3EFE; font-size: 33px; font-family: Poppins; font-weight: 900; line-height: 39.60px; word-wrap: break-word; text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.28)">SOME OF MY DESIGNS FOR CIILEY TRAVEL AND CARGO</div>
+    <img data-layer="Rectangle 1031" class="Rectangle1031" style="width: 448px; height: 448px; left: 26px; top: 2491px; position: absolute; box-shadow: 0px 10px 24.399999618530273px rgba(0, 0, 0, 0.46)" src="Ciileey posters-10.png" />
+    <img data-layer="Rectangle 1032" class="Rectangle1032" style="width: 448px; height: 448px; left: 496px; top: 2491px; position: absolute; box-shadow: 0px 10px 24.399999618530273px rgba(0, 0, 0, 0.46)" src="Ciileey posters-07.png" />
+    <img data-layer="Rectangle 1033" class="Rectangle1033" style="width: 448px; height: 448px; left: 966px; top: 2491px; position: absolute; box-shadow: 0px 10px 24.399999618530273px rgba(0, 0, 0, 0.46)" src="Ciileey posters-11.png" />
+    <div data-svg-wrapper data-layer="Rectangle 11" class="Rectangle11" style="left: -77px; top: 2995px; position: absolute">
+      <svg width="1600" height="345" viewBox="0 0 1440 345" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1517 345L-77 345L-77 0.000675895L1517 0.000213623L1517 345Z" fill="#F073DA"/>
+      </svg>
+    </div>
+    <div data-layer="Rectangle 1" class="Rectangle1" style="width: 756px; height: 1180px; left: 1180px; top: 2995px; position: absolute; transform: rotate(90deg); transform-origin: top left; background: linear-gradient(180deg, rgba(74, 62, 254, 0) 21%, #4A3EFE 90%)"></div>
+    <div data-layer="© 2025 Zain Website. All rights reserved" class="2025ZainWebsiteAllRightsReserved" style="left: 524px; top: 3296px; position: absolute; color: white; font-size: 20px; font-family: sans-serif; font-weight: 500; word-wrap: break-word">© 2025 Zain Website. All rights reserved</div>
+    <div data-layer="Line 2" class="Line2" style="width: 1666px; height: 0px; left: -28px; top: 3275px; position: absolute; outline: 1px white solid; outline-offset: -0.50px"></div>
+    <div data-layer="QUICK LINKS" class="QuickLinks" style="left: 80px; top: 3005px; position: absolute; text-align: center; color: white; font-size: 30px; font-family: Poppins; font-weight: 700; line-height: 45px; word-wrap: break-word">QUICK LINKS</div>
+    <div data-layer="HOME" class="Home" style="left: 80px; top: 3067px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 500; line-height: 33px; word-wrap: break-word; text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36)">HOME</div>
+    <div data-layer="ABOUT ME" class="AboutMe" style="left: 80px; top: 3106px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 500; line-height: 33px; word-wrap: break-word; text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36)">ABOUT ME</div>
+    <div data-layer="MY NEIGHBORHOOD" class="MyNeighborhood" style="left: 80px; top: 3145px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 500; line-height: 33px; word-wrap: break-word; text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36)">MY NEIGHBORHOOD</div>
+    <div data-layer="MY UNIVERSITY" class="MyUniversity" style="left: 80px; top: 3184px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 500; line-height: 33px; word-wrap: break-word; text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36)">MY UNIVERSITY</div>
+    <div data-layer="CONTACT ME" class="ContactMe" style="left: 80px; top: 3223px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 500; line-height: 33px; word-wrap: break-word; text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36)">CONTACT ME</div>
+    <div data-layer="Whatsapp" class="Whatsapp" style="width: 115px; height: 38px; left: 566.69px; top: 3012px; position: absolute; text-align: center; color: #E6E8FF; font-size: 22px; font-family: Poppins; font-weight: 400; line-height: 33px; word-wrap: break-word">Whatsapp</div>
+    <div data-layer="+252 612652448" class="252612652448" style="left: 566.69px; top: 3035px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 700; line-height: 33px; word-wrap: break-word">+252 612652448</div>
+    <div data-svg-wrapper data-layer="Rectangle 15" class="Rectangle15" style="left: 507.91px; top: 3018px; position: absolute">
+      <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_d_1_200)">
+      <rect x="7.90625" y="3.90649" width="38.5938" height="38.5938" rx="7" fill="#EEEFFE"/>
+      </g>
+      <defs>
+      <filter id="filter0_d_1_200" x="0.90625" y="0.906494" width="52.5938" height="52.5938" filterUnits="userSpaceOnUse" color-sans-serifpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="3.5"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.36 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_200"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_200" result="shape"/>
+      </filter>
+      </defs>
+      </svg>
+    </div>
+    <div data-svg-wrapper data-layer="Whatsapp" class="Whatsapp" style="left: 507px; top: 3013px; position: absolute">
+      <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M37.2909 19.6599C34.9592 17.3158 31.8545 16.0315 28.5503 16.0315C21.7423 16.0315 16.1937 21.5801 16.1937 28.388C16.1937 30.5701 16.7673 32.6897 17.8396 34.5601L16.094 40.969L22.6401 39.2483C24.4481 40.2333 26.4805 40.757 28.5503 40.757C35.3582 40.757 40.9068 35.2084 40.9068 28.4005C40.9068 25.0963 39.6225 21.9916 37.2909 19.6599ZM28.5503 38.6623C26.7049 38.6623 24.8969 38.1635 23.3134 37.2284L22.9393 37.0039L19.0491 38.0264L20.084 34.2359L19.8346 33.8493C18.8122 32.2159 18.2636 30.3207 18.2636 28.388C18.2636 22.7272 22.877 18.1138 28.5378 18.1138C31.2809 18.1138 33.862 19.1861 35.7946 21.1312C37.7397 23.0763 38.7996 25.6574 38.7996 28.4005C38.8245 34.0613 34.2111 38.6623 28.5503 38.6623ZM34.1862 30.9815C33.8744 30.8319 32.3532 30.0838 32.0789 29.9716C31.7922 29.8718 31.5927 29.8219 31.3807 30.1212C31.1687 30.4329 30.5827 31.1312 30.4081 31.3307C30.2336 31.5426 30.0465 31.5676 29.7348 31.4055C29.4231 31.2558 28.4256 30.9192 27.2535 29.8718C26.3308 29.0489 25.7199 28.0389 25.5328 27.7272C25.3583 27.4155 25.5079 27.2534 25.67 27.0913C25.8072 26.9541 25.9817 26.7297 26.1313 26.5551C26.281 26.3806 26.3433 26.2434 26.4431 26.0439C26.5428 25.8319 26.4929 25.6574 26.4181 25.5077C26.3433 25.3581 25.7199 23.8369 25.4705 23.2135C25.2211 22.615 24.9593 22.6898 24.7722 22.6773C24.5852 22.6773 24.3857 22.6773 24.1737 22.6773C23.9618 22.6773 23.6376 22.7522 23.3508 23.0639C23.0765 23.3756 22.2785 24.1237 22.2785 25.6449C22.2785 27.1661 23.3882 28.6374 23.5378 28.8369C23.6875 29.0489 25.7199 32.1661 28.8121 33.5002C29.5478 33.8244 30.1213 34.0114 30.5702 34.1486C31.3059 34.3855 31.9792 34.3481 32.5153 34.2733C33.1138 34.186 34.3482 33.5252 34.5976 32.802C34.8595 32.0788 34.8595 31.4678 34.7722 31.3307C34.6849 31.1935 34.4979 31.1312 34.1862 30.9815Z" fill="#4A3EFE"/>
+      </svg>
+    </div>
+    <div data-layer="Email" class="Email" style="width: 60px; height: 38px; left: 567px; top: 3096px; position: absolute; text-align: center; color: #E6E8FF; font-size: 22px; font-family: Poppins; font-weight: 400; line-height: 33px; word-wrap: break-word">Email</div>
+    <div data-layer="khaalidmaxamed1000@gmail.com" class="Khaalidmaxamed1000GmailCom" style="left: 567px; top: 3119px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 700; line-height: 33px; word-wrap: break-word">khaalidmaxamed1000@gmail.com</div>
+    <div data-svg-wrapper data-layer="Rectangle 15" class="Rectangle15" style="left: 515.91px; top: 3105.91px; position: absolute">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0.90625" y="0.906494" width="38.5938" height="38.5938" rx="7" fill="#EEEFFE"/>
+      </svg>
+    </div>
+    <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 524px; top: 3117px; position: absolute">
+      <svg width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20.7 0.000244141H2.3C1.035 0.000244141 0.0115 1.01274 0.0115 2.25024L0 15.7502C0 16.9877 1.035 18.0002 2.3 18.0002H20.7C21.965 18.0002 23 16.9877 23 15.7502V2.25024C23 1.01274 21.965 0.000244141 20.7 0.000244141ZM20.7 4.50024L11.5 10.1252L2.3 4.50024V2.25024L11.5 7.87524L20.7 2.25024V4.50024Z" fill="#4A3EFE"/>
+      </svg>
+    </div>
+    <div data-layer16n="Location" class="Location" style="width: 94px; height: 38px; left: 567px; top: 3178px; position: absolute; text-align: center; color: #E6E8FF; font-size: 22px; font-family: Poppins; font-weight: 400; line-height: 33px; word-wrap: break-word">Location</div>
+    <div data-layer16n="Mogadishu-Somalia" class="MogadishuSomalia" style="left: 567px; top: 3201px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 700; line-height: 33px; word-wrap: break-word">Mogadishu-Somalia</div>
+    <div data-svg-wrapper data-layer="Rectangle 15" class="Rectangle15" style="left: 515.91px; top: 3187.91px; position: absolute">
+      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0.90625" y="0.906494" width="38.5938" height="38.5938" rx="7" fill="#EEEFFE"/>
+      </svg>
+    </div>
+    <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 527px; top: 3195px; position: absolute">
+      <svg width="18" height="26" viewBox="0 0 18 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M9 0.000244141C4.02429 0.000244141 0 4.06924 0 9.10024C0 15.9252 9 26.0002 9 26.0002C9 26.0002 18 15.9252 18 9.10024C18 4.06924 13.9757 0.000244141 9 0.000244141ZM9 12.3502C7.22571 12.3502 5.78571 10.8942 5.78571 9.10024C5.78571 7.30624 7.22571 5.85024 9 5.85024C10.7743 5.85024 12.2143 7.30624 12.2143 9.10024C12.2143 10.8942 10.7743 12.3502 9 12.3502Z" fill="#4A3EFE"/>
+      </svg>
+    </div>
+    <div data-layer="Follow Us" class="FollowUs" style="left: 1182px; top: 3086px; position: absolute; text-align: center; color: white; font-size: 26px; font-family: Poppins; font-weight: 700; line-height: 39px; word-wrap: break-word">Follow Us </div>
+    <div data-svg-wrapper data-layer="Rectangle 16" class="Rectangle16" style="left: 1185px; top: 3128px; position: absolute">
+      <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_d_1_224)">
+      <rect x="7" y="3.00024" width="42" height="42" rx="5" fill="#EEEFFE"/>
+      </g>
+      <defs>
+      <filter id="filter0_d_1_224" x="0" y="0.000244141" width="56" height="56" filterUnits="userSpaceOnUse" color-sans-serifpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="3.5"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.36 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_224"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_224" result="shape"/>
+      </filter>
+      </defs>
+      </svg>
+    </div>
+    <div data-layer="F" class="F" style="left: 1195px; top: 3123px; position: absolute; text-align: center; color: #EEEFFE; font-size: 36px; font-family: Poppins; font-weight: 700; text-decoration: underline; line-height: 54px; word-wrap: break-word">F</div>
+    <div data-svg-wrapper data-layer="Facebook" class="Facebook" style="left: 1198px; top: 3138px; position: absolute">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M27.5 15.0002C27.5 8.10024 21.9 2.50024 15 2.50024C8.1 2.50024 2.5 8.10024 2.5 15.0002C2.5 21.0502 6.8 26.0877 12.5 27.2502V18.7502H10V15.0002H12.5V11.8752C12.5 9.46274 14.4625 7.50024 16.875 7.50024H20V11.2502H17.5C16.8125 11.2502 16.25 11.8127 16.25 12.5002V15.0002H20V18.7502H16.25V27.4377C22.5625 26.8127 27.5 21.4877 27.5 15.0002Z" fill="#4A3EFE"/>
+      </svg>
+    </div>
+    <div data-svg-wrapper data-layer="Rectangle 17" class="Rectangle17" style="left: 1246px; top: 3128px; position: absolute">
+      <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_d_1_229)">
+      <rect x="7" y="3.00024" width="42" height="42" rx="5" fill="#EEEFFE"/>
+      </g>
+      <defs>
+      <filter id="filter0_d_1_229" x="0" y="0.000244141" width="56" height="56" filterUnits="userSpaceOnUse" color-sans-serifpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="3.5"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.36 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_229"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_229" result="shape"/>
+      </filter>
+      </defs>
+      </svg>
+    </div>
+    <div data-layer="X" class="X" style="width: 43px; left: 1255px; top: 3123px; position: absolute; text-align: center"><span style="color: #EEEFFE; font-size: 36px; font-family: Poppins; font-weight: 700; text-decoration: underline; line-height: 54px; word-wrap: break-word">X</span><span style="color: #EEEFFE; font-size: 36px; font-family: Poppins; font-weight: 700; line-height: 54px; word-wrap: break-word">.</span></div>
+    <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 1262px; top: 3139.4px; position: absolute">
+      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0.000244141L9.62584 14.0627L0.203878 25.0002H2.29138L10.5478 15.4094L17.1129 25.0002H25L14.9433 10.3094L23.8178 0.000244141H21.7367L14.0201 8.95892L7.88711 0.000244141H0ZM2.49269 1.31603H7.19598L22.5073 23.6845H17.804L2.49269 1.31603Z" fill="#4A3EFE"/>
+      </svg>
+    </div>
+    <div data-svg-wrapper data-layer="Rectangle 18" class="Rectangle18" style="left: 1307px; top: 3128px; position: absolute">
+      <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_d_1_233)">
+      <rect x="7" y="3.00024" width="42" height="42" rx="5" fill="#EEEFFE"/>
+      </g>
+      <defs>
+      <filter id="filter0_d_1_233" x="0" y="0.000244141" width="56" height="56" filterUnits="userSpaceOnUse" color-sans-serifpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="4"/>
+      <feGaussianBlur stdDeviation="3.5"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.36 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_233"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_233" result="shape"/>
+      </filter>
+      </defs>
+      </svg>
+    </div>
+    <div data-layer="TikTok" class="Tiktok" style="width: 57px; height: 57px; left: 1299px; top: 3121px; position: absolute; overflow: hidden">
+      <div data-layer="Vector" class="Vector" style="width: 42.75px; height: 42.75px; left: 7.12px; top: 7.12px; position: absolute; background: linear-gradient(180deg, rgba(52, 52, 52, 0) 100%)"></div>
+      <div data-layer="TI" class="Ti" style="width: 40px; left: 12px; top: -2px; position: absolute; text-align: center; color: #EEEFFE; font-size: 36px; font-family: Poppins; font-weight: 700; text-decoration: underline; line-height: 54px; word-wrap: break-word">TI</div>
+      <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 24px; top: 20px; position: absolute">
+        <svg width="23" height="28" viewBox="0 0 23 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6846 9.47106C17.5561 10.8082 19.8491 11.5943 22.3251 11.5943V6.83124C21.856 6.83124 21.3893 6.78255 20.931 6.68518V10.4341C18.455 10.4341 16.1631 9.6468 14.2905 8.31087V18.0294C14.2905 22.891 10.3468 26.8323 5.48278 26.8323C3.66828 26.8323 1.98084 26.2837 0.57959 25.3432C2.17915 26.9772 4.40928 27.9913 6.8769 27.9913C11.7409 27.9913 15.6846 24.05 15.6846 19.1884V9.47106ZM17.4053 4.66643C16.4493 3.62262 15.8211 2.27243 15.6846 0.779742V0.166992H14.3629C14.6954 2.06343 15.8306 3.68437 17.4053 4.66643ZM3.6564 21.6132C3.12203 20.9126 2.83346 20.0564 2.83465 19.1753C2.83465 16.9511 4.63846 15.1485 6.86384 15.1485C7.27828 15.1485 7.69034 15.2114 8.08578 15.3373V10.4686C7.62384 10.4056 7.15834 10.3783 6.69165 10.3878V14.1771C6.29621 14.0512 5.88415 13.9883 5.46853 13.9883C3.24315 13.9883 1.43934 15.7909 1.43934 18.0151C1.44053 19.5886 2.34184 20.9506 3.6564 21.6132Z" fill="#4A3EFE"/>
+        </svg>
+      </div>
+      <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 21.49px; top: 20px; position: absolute">
+        <svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2904 8.31087C18.1619 9.64799 20.455 10.4341 22.9309 10.4341V6.68518C21.5487 6.39068 20.3255 5.66868 19.4052 4.66524C17.8306 3.68318 16.6965 2.06343 16.364 0.166992H12.893V19.1884C12.8847 21.4054 11.0844 23.2009 8.86378 23.2009C7.55516 23.2009 6.3926 22.5775 5.65635 21.6121C4.34178 20.9494 3.44047 19.5874 3.44047 18.0151C3.44047 15.7909 5.24428 13.9883 7.46966 13.9883C7.89597 13.9883 8.30684 14.0548 8.69278 14.1771V10.389C3.91428 10.4876 0.0715332 14.3897 0.0715332 19.1896C0.0715332 21.5859 1.02866 23.7579 2.58191 25.3444C3.98316 26.2849 5.67059 26.8335 7.48509 26.8335C12.3491 26.8335 16.2928 22.8922 16.2928 18.0306L16.2904 8.31087Z" fill="#4A3EFE"/>
+        </svg>
+      </div>
+      <div data-layer="Vector" class="Vector" style="width: 24.26px; height: 26.34px; left: 15.68px; top: 14.01px; position: absolute; background: rgba(239, 115, 218, 0)"></div>
+    </div>
+    
+    </div> 
+    
+    
+
+    
+    
+  </div>
+
+</body>
+</html>

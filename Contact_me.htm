@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+</head>
+<body>
+
+  <div data-layer="Desktop -5" class="Desktop5" style="width: 1440px; height: 1848px; position: relative; margin-right:auto; margin-left: auto; background: white; overflow: hidden">
+  <div data-layer="Rectangle 1010" class="Rectangle1010" style="width: 1530px; height: 845px; left: -45px; top: -173px; position: absolute; background: #D9D9D9"></div>
+  <div data-layer="Rectangle 20" class="Rectangle20" style="width: 1440px; height: 742px; left: 0px; top: 7px; position: absolute; background: linear-gradient(270deg, #F073DA 0%, #4A3EFE 100%)"></div>
+  <div data-layer="Ellipse 1" class="Ellipse1" style="width: 476px; height: 476px; left: 898px; top: 166px; position: absolute; background: #8950F8; border-radius: 9999px"></div>
+  <img data-layer="Rectangle 2" class="Rectangle2" style="width: 509px; height: 556px; left: 883px; top: 191px; position: absolute" src="me2.png" />
+  <div data-layer="Rectangle 1" class="Rectangle1" style="width: 1713px; height: 111px; left: -56px; top: 638px; position: absolute; background: linear-gradient(180deg, rgba(234, 113, 219, 0) 0%, rgba(234, 113, 219, 0.48) 100%)"></div>
+  <div data-layer="Rectangle 1" class="Rectangle1" style="width: 756px; height: 1474px; left: 1440px; top: -7px; position: absolute; transform: rotate(90deg); transform-origin: top left; background: linear-gradient(180deg, rgba(74, 62, 254, 0) 43%, #4A3EFE 90%)"></div>
+  <div data-layer="Hi, let’s connect —    whether you have a project,    an idea, or just want to chat,    I’m always open to new    opportunities and meaningful    collaborations." class="HiLetSConnectWhetherYouHaveAProjectAnIdeaOrJustWantToChatIMAlwaysOpenToNewOpportunitiesAndMeaningfulCollaborations" style="left: 87px; top: 200px; position: absolute; color: white; font-size: 45px; font-family: sans-serif; font-weight: 700; word-wrap: break-word">Hi, let’s connect — <br>   whether you have a project, <br>   an idea, or just want to chat, <br>   I’m always open to new <br>   opportunities and meaningful <br>   collaborations.</div>
+  <div data-layer="Rectangle 6" class="Rectangle6" style="width: 140px; height: 45px; left: 87px; top: 560px; position: absolute; opacity: 0.21; background: rgba(217, 217, 217, 0.70); box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36); border-radius: 22.50px"></div>
+  <a href="About_Me.htm"><div data-layer="About Me" class="AboutMe" style="width: 94px; height: 25px; left: 110px; top: 570px; position: absolute; color: white; font-size: 20px; font-family: sans-serif; font-weight: 500; word-wrap: break-word;z-index: 1000;">About Me</div></a>
+  <div data-layer="Rectangle 6" class="Rectangle6" style="width: 140px; height: 45px; left: 236px; top: 560px; position: absolute; opacity: 0.21; background: rgba(217, 217, 217, 0.70); box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36); border-radius: 22.50px"></div>
+  <a href="Contact_me.htm"><div data-layer="Contact Me" class="ContactMe" style="width: 113px; height: 25px; left: 249px; top: 570px; position: absolute; color: white; font-size: 20px; font-family: sans-serif; font-weight: 500; word-wrap: break-word; z-index: 1000;">Contact Me</div></a>
+  <div data-layer="Rectangle 8" class="Rectangle8" style="width: 1622px; height: 80px; left: -91px; top: -8px; position: absolute; background: #EEEFFE"></div>
+<style>
+  a:hover { color: #000066; }
+  label:hover { color: #000066; }
+
+  .nav-link {
+    position: absolute;
+    color: #4A3EFE;
+    font-size: 24px;
+    font-family: Tajawal, sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    left: -50px;
+    top: -16px;
+    z-index: 1000;
+  }
+
+  .nav-container {
+    position: relative;
+  }
+
+  .dropdown {
+    position: absolute;
+    top: 38px;
+    left: 1340px;
+    cursor: pointer;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  .dropdown-label {
+    color: #4A3EFE;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: Tajawal, sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    position: relative;
+    z-index: 1000;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1001;
+    min-width: 160px;
+  }
+
+  #menu-toggle:checked + .dropdown-label + .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    display: block;
+    padding: 8px 12px;
+    font-size: 18px;
+    color: #4A3EFE;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #EEEFFE;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  #menu-toggle:checked ~ .overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+  }
+</style>
+
+<div data-layer="Nav" class="nav-link" style="position: relative;">
+  <a href="Home.htm" class="nav-link" style="left: 506px;top: 38px;">HOME</a>
+  <a href="About_Me.htm" class="nav-link" style="left: 601.71px;top: 38px;">ABOUT ME</a>
+  <a href="About_My_Neighberhood.htm" class="nav-link" style="left: 742.76px;top: 38px;">MY NEIGHBORHOOD</a>
+  <a href="About_My_University.htm" class="nav-link" style="left: 983.55px;top: 38px;">MY UNIVERSITY</a>
+  <a href="Contact_me.htm" class="nav-link" style="left: 1176.99px; top: 38px;">CONTACT ME</a>
+
+  <div class="dropdown nav-link">
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="dropdown-label">OTHERS</label>
+
+    <div class="dropdown-content">
+      <a href="Ch6.htm">Chapter 6</a>
+      <a href="Ch7.htm">Chapter 7</a>
+      <a href="Ch8.htm">Chapter 8</a>
+      <a href="Ch9.htm">Chapter 9</a>
+      <a href="Ch10.htm">Chapter 10</a>
+    </div>
+
+    <label for="menu-toggle" class="overlay"></label>
+  </div>
+</div>
+  <div data-layer="Rectangle 5" class="Rectangle5" style="width: 225px; height: 42px; left: 127px; top: 15px; position: absolute; background: #4A3EFE; box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36); border-radius: 5px"></div>
+  <div data-layer="ZAIN WEBSITE" class="ZainWebsite" style=" height: 34px; left: 140px; top: 13px; position: absolute; text-align: center; color: white; font-size: 32px; font-family: Tajawal; font-weight: 900; line-height: 48px; word-wrap: break-word">ZAIN WEBSITE</div>
+  <div data-layer="66" style="width: 1504px; height: 812px; left: -30px; top: 182px; position: absolute; background: rgba(255, 255, 255, 0)"></div>
+  <div data-svg-wrapper data-layer="Rectangle 11" class="Rectangle11" style="left: -78px; top: 1503px; position: absolute">
+    <svg width="1520" height="345" viewBox="0 0 1440 345" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1516 345L-78 345L-78 0.000431755L1516 -3.05176e-05L1516 345Z" fill="#F073DA"/>
+    </svg>
+  </div>
+  <div data-layer="Rectangle 1" class="Rectangle1" style="width: 756px; height: 1180px; left: 1181px; top: 1503px; position: absolute; transform: rotate(90deg); transform-origin: top left; background: linear-gradient(180deg, rgba(74, 62, 254, 0) 21%, #4A3EFE 90%)"></div>
+  <div data-layer="© 2025 Zain Website. All rights reserved" class="2025ZainWebsiteAllRightsReserved" style="left: 523px; top: 1804px; position: absolute; color: white; font-size: 20px; font-family: sans-serif; font-weight: 500; word-wrap: break-word">© 2025 Zain Website. All rights reserved</div>
+  <div data-layer="Line 2" class="Line2" style="width: 1666px; height: 0px; left: -29px; top: 1783px; position: absolute; outline: 1px white solid; outline-offset: -0.50px"></div>
+  <div data-layer="QUICK LINKS" class="QuickLinks" style="left: 79px; top: 1513px; position: absolute; text-align: center; color: white; font-size: 30px; font-family: Poppins; font-weight: 700; line-height: 45px; word-wrap: break-word">QUICK LINKS</div>
+  <div data-layer="HOME" class="Home" style="left: 79px; top: 1575px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 500; line-height: 33px; word-wrap: break-word; text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36)">HOME</div>
+  <div data-layer="ABOUT ME" class="AboutMe" style="left: 79px; top: 1614px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 500; line-height: 33px; word-wrap: break-word; text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36)">ABOUT ME</div>
+  <div data-layer="MY NEIGHBORHOOD" class="MyNeighborhood" style="left: 79px; top: 1653px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 500; line-height: 33px; word-wrap: break-word; text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36)">MY NEIGHBORHOOD</div>
+  <div data-layer="MY UNIVERSITY" class="MyUniversity" style="left: 79px; top: 1692px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 500; line-height: 33px; word-wrap: break-word; text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36)">MY UNIVERSITY</div>
+  <div data-layer="CONTACT ME" class="ContactMe" style="left: 79px; top: 1731px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 500; line-height: 33px; word-wrap: break-word; text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36)">CONTACT ME</div>
+  <div data-layer="Whatsapp" class="Whatsapp" style="width: auto; height: 38px; left: 565.69px; top: 1520px; position: absolute; text-align: center; color: #E6E8FF; font-size: 22px; font-family: Poppins; font-weight: 400; line-height: 33px; word-wrap: break-word">Whatsapp</div>
+  <div data-layer="+252 612652448" class="252612652448" style="left: 565.69px; top: 1543px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 700; line-height: 33px; word-wrap: break-word">+252 612652448</div>
+  <div data-svg-wrapper data-layer="Rectangle 15" class="Rectangle15" style="left: 508px; top: 1526px; position: absolute">
+    <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_d_1_665)">
+    <rect x="7.90625" y="3.90625" width="38.5938" height="38.5938" rx="7" fill="#EEEFFE"/>
+    </g>
+    <defs>
+    <filter id="filter0_d_1_665" x="0.90625" y="0.90625" width="52.5938" height="52.5938" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+    <feOffset dy="4"/>
+    <feGaussianBlur stdDeviation="3.5"/>
+    <feComposite in2="hardAlpha" operator="out"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.36 0"/>
+    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_665"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_665" result="shape"/>
+    </filter>
+    </defs>
+    </svg>
+  </div>
+  <div data-svg-wrapper data-layer="Whatsapp" class="Whatsapp" style="left: 507.7px; top: 1521px; position: absolute">
+    <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M37.2906 19.6597C34.959 17.3155 31.8543 16.0312 28.55 16.0312C21.7421 16.0312 16.1935 21.5798 16.1935 28.3878C16.1935 30.5698 16.7671 32.6895 17.8394 34.5598L16.0938 40.9688L22.6398 39.2481C24.4478 40.2331 26.4802 40.7568 28.55 40.7568C35.358 40.7568 40.9066 35.2082 40.9066 28.4003C40.9066 25.096 39.6223 21.9913 37.2906 19.6597ZM28.55 38.662C26.7047 38.662 24.8967 38.1633 23.3132 37.2281L22.9391 37.0037L19.0488 38.0261L20.0838 34.2356L19.8344 33.8491C18.8119 32.2157 18.2633 30.3204 18.2633 28.3878C18.2633 22.727 22.8768 18.1135 28.5376 18.1135C31.2807 18.1135 33.8617 19.1858 35.7944 21.131C37.7395 23.0761 38.7993 25.6571 38.7993 28.4003C38.8243 34.0611 34.2108 38.662 28.55 38.662ZM34.1859 30.9813C33.8742 30.8317 32.353 30.0835 32.0787 29.9713C31.7919 29.8716 31.5924 29.8217 31.3804 30.1209C31.1685 30.4327 30.5824 31.1309 30.4079 31.3304C30.2333 31.5424 30.0463 31.5673 29.7346 31.4052C29.4228 31.2556 28.4253 30.9189 27.2533 29.8716C26.3306 29.0486 25.7196 28.0387 25.5326 27.7269C25.358 27.4152 25.5077 27.2531 25.6698 27.091C25.8069 26.9539 25.9815 26.7294 26.1311 26.5549C26.2807 26.3803 26.3431 26.2432 26.4428 26.0437C26.5426 25.8317 26.4927 25.6571 26.4179 25.5075C26.3431 25.3579 25.7196 23.8367 25.4703 23.2133C25.2209 22.6148 24.959 22.6896 24.772 22.6771C24.585 22.6771 24.3855 22.6771 24.1735 22.6771C23.9615 22.6771 23.6373 22.7519 23.3506 23.0636C23.0763 23.3753 22.2783 24.1235 22.2783 25.6447C22.2783 27.1658 23.388 28.6372 23.5376 28.8367C23.6872 29.0486 25.7196 32.1658 28.8119 33.5C29.5475 33.8242 30.1211 34.0112 30.57 34.1483C31.3056 34.3853 31.9789 34.3478 32.5151 34.273C33.1136 34.1857 34.348 33.5249 34.5974 32.8017C34.8592 32.0785 34.8592 31.4676 34.7719 31.3304C34.6847 31.1933 34.4976 31.1309 34.1859 30.9813Z" fill="#4A3EFE"/>
+    </svg>
+  </div>
+  <div data-layer="Email" class="Email" style="width: auto; height: 38px; left: 566px; top: 1604px; position: absolute; text-align: center; color: #E6E8FF; font-size: 22px; font-family: Poppins; font-weight: 400; line-height: 33px; word-wrap: break-word">Email</div>
+  <div data-layer="khaalidmaxamed1000@gmail.com" class="Khaalidmaxamed1000GmailCom" style="left: 566px; top: 1627px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 700; line-height: 33px; word-wrap: break-word">khaalidmaxamed1000@gmail.com</div>
+  <div data-svg-wrapper data-layer="Rectangle 15" class="Rectangle15" style="left: 514.91px; top: 1613.91px; position: absolute">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0.90625" y="0.90625" width="38.5938" height="38.5938" rx="7" fill="#EEEFFE"/>
+    </svg>
+  </div>
+
+  <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 523px; top: 1625px; position: absolute">
+    <svg width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20.7 0H2.3C1.035 0 0.0115 1.0125 0.0115 2.25L0 15.75C0 16.9875 1.035 18 2.3 18H20.7C21.965 18 23 16.9875 23 15.75V2.25C23 1.0125 21.965 0 20.7 0ZM20.7 4.5L11.5 10.125L2.3 4.5V2.25L11.5 7.875L20.7 2.25V4.5Z" fill="#4A3EFE"/>
+    </svg>
+  </div>
+  <div data-layer="Location" class="Location" style="width: auto; height: 38px; left: 566px; top: 1686px; position: absolute; text-align: center; color: #E6E8FF; font-size: 22px; font-family: Poppins; font-weight: 400; line-height: 33px; word-wrap: break-word">Location</div>
+  <div data-layer="Mogadishu-Somalia" class="MogadishuSomalia" style="left: 566px; top: 1709px; position: absolute; text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 700; line-height: 33px; word-wrap: break-word">Mogadishu-Somalia</div>
+  <div data-svg-wrapper data-layer="Rectangle 15" class="Rectangle15" style="left: 514.91px; top: 1695.91px; position: absolute">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0.90625" y="0.90625" width="38.5938" height="38.5938" rx="7" fill="#EEEFFE"/>
+    </svg>
+  </div>
+  <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 526px; top: 1703px; position: absolute">
+    <svg width="18" height="26" viewBox="0 0 18 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M9 0C4.02429 0 0 4.069 0 9.1C0 15.925 9 26 9 26C9 26 18 15.925 18 9.1C18 4.069 13.9757 0 9 0ZM9 12.35C7.22571 12.35 5.78571 10.894 5.78571 9.1C5.78571 7.306 7.22571 5.85 9 5.85C10.7743 5.85 12.2143 7.306 12.2143 9.1C12.2143 10.894 10.7743 12.35 9 12.35Z" fill="#4A3EFE"/>
+    </svg>
+  </div>
+  <div data-layer="Follow Us" class="FollowUs" style="left: 1190px; top: 1594px; position: absolute; text-align: center; color: white; font-size: 26px; font-family: Poppins; font-weight: 700; line-height: 39px; word-wrap: break-word">Follow Us </div>
+  <div data-svg-wrapper data-layer="Rectangle 16" class="Rectangle16" style="left: 1184px; top: 1636px; position: absolute">
+    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_d_1_689)">
+    <rect x="7" y="3" width="42" height="42" rx="5" fill="#EEEFFE"/>
+    </g>
+    <defs>
+    <filter id="filter0_d_1_689" x="0" y="0" width="56" height="56" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+    <feOffset dy="4"/>
+    <feGaussianBlur stdDeviation="3.5"/>
+    <feComposite in2="hardAlpha" operator="out"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.36 0"/>
+    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_689"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_689" result="shape"/>
+    </filter>
+    </defs>
+    </svg>
+  </div>
+  <div data-layer="F" class="F" style="left: 1200px; top: 1630px; position: absolute; text-align: center; color: #EEEFFE; font-size: 36px; font-family: Poppins; font-weight: 700; text-decoration: underline; line-height: 54px; word-wrap: break-word">F</div>
+  <div data-svg-wrapper data-layer="Facebook" class="Facebook" style="left: 1196px; top: 1645px; position: absolute">
+    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M27.5 15C27.5 8.1 21.9 2.5 15 2.5C8.1 2.5 2.5 8.1 2.5 15C2.5 21.05 6.8 26.0875 12.5 27.25V18.75H10V15H12.5V11.875C12.5 9.4625 14.4625 7.5 16.875 7.5H20V11.25H17.5C16.8125 11.25 16.25 11.8125 16.25 12.5V15H20V18.75H16.25V27.4375C22.5625 26.8125 27.5 21.4875 27.5 15Z" fill="#4A3EFE"/>
+    </svg>
+  </div>
+  <div data-svg-wrapper data-layer="Rectangle 17" class="Rectangle17" style="left: 1245px; top: 1636px; position: absolute">
+    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_d_1_694)">
+    <rect x="7" y="3" width="42" height="42" rx="5" fill="#EEEFFE"/>
+    </g>
+    <defs>
+    <filter id="filter0_d_1_694" x="0" y="0" width="56" height="56" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+    <feOffset dy="4"/>
+    <feGaussianBlur stdDeviation="3.5"/>
+    <feComposite in2="hardAlpha" operator="out"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.36 0"/>
+    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_694"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_694" result="shape"/>
+    </filter>
+    </defs>
+    </svg>
+  </div>
+  <div data-layer="X." class="X" style="width: 43px; left: 1250px; top: 1631px; position: absolute; text-align: center"><span style="color: #EEEFFE; font-size: 36px; font-family: Poppins; font-weight: 700; text-decoration: underline; line-height: 54px; word-wrap: break-word">X</span><span style="color: #EEEFFE; font-size: 36px; font-family: Poppins; font-weight: 700; line-height: 54px; word-wrap: break-word">.</span></div>
+  <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 1259.6px; top: 1648px; position: absolute">
+    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0L9.62584 14.0625L0.203878 25H2.29138L10.5478 15.4091L17.1129 25H25L14.9433 10.3092L23.8178 0H21.7367L14.0201 8.95868L7.88711 0H0ZM2.49269 1.31579H7.19598L22.5073 23.6842H17.804L2.49269 1.31579Z" fill="#4A3EFE"/>
+    </svg>
+  </div>
+  <div data-svg-wrapper data-layer="Rectangle 18" class="Rectangle18" style="left: 1306px; top: 1636px; position: absolute">
+    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_d_1_698)">
+    <rect x="7" y="3" width="42" height="42" rx="5" fill="#EEEFFE"/>
+    </g>
+    <defs>
+    <filter id="filter0_d_1_698" x="0" y="0" width="56" height="56" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+    <feOffset dy="4"/>
+    <feGaussianBlur stdDeviation="3.5"/>
+    <feComposite in2="hardAlpha" operator="out"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.36 0"/>
+    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_698"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_698" result="shape"/>
+    </filter>
+    </defs>
+    </svg>
+  </div>
+  <div data-layer="TikTok" class="Tiktok" style="width: 57px; height: 57px; left: 1298px; top: 1629px; position: absolute; overflow: hidden">
+    <div data-layer="Vector" class="Vector" style="width: 42.75px; height: 42.75px; left: 7.12px; top: 7.12px; position: absolute; background: linear-gradient(180deg, rgba(52, 52, 52, 0) 100%)"></div>
+    <div data-layer="TI" class="Ti" style="width: 40px; left: 13px; top: 1px; position: absolute; text-align: center; color: #EEEFFE; font-size: 36px; font-family: Poppins; font-weight: 700; text-decoration: underline; line-height: 54px; word-wrap: break-word">TI</div>
+    <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 25px; top: 19px; position: absolute">
+      <svg width="23" height="28" viewBox="0 0 23 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6846 9.47081C17.5561 10.8079 19.8491 11.5941 22.3251 11.5941V6.831C21.856 6.831 21.3893 6.78231 20.931 6.68493V10.4339C18.455 10.4339 16.1631 9.64656 14.2905 8.31062V18.0291C14.2905 22.8907 10.3468 26.8321 5.48278 26.8321C3.66828 26.8321 1.98084 26.2834 0.57959 25.3429C2.17915 26.9769 4.40928 27.9911 6.8769 27.9911C11.7409 27.9911 15.6846 24.0497 15.6846 19.1881V9.47081ZM17.4053 4.66619C16.4493 3.62237 15.8211 2.27219 15.6846 0.779498V0.166748H14.3629C14.6954 2.06319 15.8306 3.68412 17.4053 4.66619ZM3.6564 21.613C3.12203 20.9124 2.83346 20.0562 2.83465 19.1751C2.83465 16.9509 4.63846 15.1482 6.86384 15.1482C7.27828 15.1482 7.69034 15.2112 8.08578 15.3371V10.4683C7.62384 10.4054 7.15834 10.3781 6.69165 10.3876V14.1769C6.29621 14.051 5.88415 13.9881 5.46853 13.9881C3.24315 13.9881 1.43934 15.7907 1.43934 18.0149C1.44053 19.5883 2.34184 20.9504 3.6564 21.613Z" fill="#4A3EFE"/>
+      </svg>
+    </div>
+    <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 22.49px; top: 19px; position: absolute">
+      <svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2902 8.31062C18.1617 9.64775 20.4547 10.4339 22.9307 10.4339V6.68493C21.5484 6.39043 20.3253 5.66843 19.405 4.665C17.8303 3.68293 16.6963 2.06319 16.3638 0.166748H12.8927V19.1881C12.8844 21.4052 11.0842 23.2007 8.86354 23.2007C7.55491 23.2007 6.39235 22.5772 5.6561 21.6118C4.34154 20.9492 3.44022 19.5871 3.44022 18.0149C3.44022 15.7907 5.24404 13.9881 7.46941 13.9881C7.89573 13.9881 8.3066 14.0546 8.69254 14.1769V10.3887C3.91404 10.4873 0.0712891 14.3894 0.0712891 19.1893C0.0712891 21.5857 1.02841 23.7576 2.58166 25.3441C3.98291 26.2846 5.67035 26.8332 7.48485 26.8332C12.3488 26.8332 16.2925 22.8919 16.2925 18.0303L16.2902 8.31062Z" fill="#4A3EFE"/>
+      </svg>
+    </div>
+    <div data-layer="Vector" class="Vector" style="width: 24.26px; height: 26.34px; left: 15.67px; top: 14.01px; position: absolute; background: rgba(239, 115, 218, 0)"></div>
+  </div>
+  <div data-layer="Rectangle 7" class="Rectangle7" style="width: 738px; height: 529px; left: 94px; top: 875px; position: absolute; background: #EEEFFE; border-radius: 21px"></div>
+  <div data-layer="Rectangle 13" class="Rectangle13" style="width: 635.40px; height: 63px; left: 145px; top: 932px; position: absolute; border-radius: 10px; border: 1px #4A3EFE solid"></div>
+<form action="https://formspree.io/f/mwpblooz" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required
+    style="width: 590px;
+           height: 24px;
+           left: 162.7px;
+           top: 950px;
+           position: absolute;
+           outline: none;
+           opacity: 0.7;
+           color: black;
+           font-size: 23px;
+           font-family: Inter, sans-serif;
+           font-weight: 500;
+           border: none;
+           padding: 4px;
+           background: transparent;">
+
+  <div data-layer="Rectangle 13" class="Rectangle13" style="width: 635.40px; height: 63px; left: 145px; top: 1014px; position: absolute; border-radius: 10px; border: 1px #4A3EFE solid"></div>
+
+  <input type="email" name="email" placeholder="Your Email" required
+    style="width: 590px;
+           height: 24px;
+           left: 162.7px;
+           top: 1032px;
+           position: absolute;
+           outline: none;
+           opacity: 0.7;
+           color: black;
+           font-size: 23px;
+           font-family: Inter, sans-serif;
+           font-weight: 500;
+           border: none;
+           padding: 4px;
+           background: transparent;">
+  
+  <div data-layer="Rectangle 13" class="Rectangle13" style="width: 635.40px; height: 63px; left: 145px; top: 1096px; position: absolute; border-radius: 10px; border: 1px #4A3EFE solid"></div>
+
+  <input type="text" name="subject" placeholder="Subject" required
+    style="width: 590px;
+           height: 24px;
+           left: 162.7px;
+           top: 1114px;
+           position: absolute;
+           outline: none;
+           opacity: 0.7;
+           color: black;
+           font-size: 23px;
+           font-family: Inter, sans-serif;
+           font-weight: 500;
+           border: none;
+           padding: 4px;
+           background: transparent;">
+  
+  <div data-layer="Rectangle 13" class="Rectangle13" style="width: 635.40px; height: 124px; left: 145px; top: 1178px; position: absolute; border-radius: 10px; border: 1px #4A3EFE solid"></div>
+
+  <textarea name="message" placeholder="Your Message" required
+    style="width: 590px;
+           height: 100px;
+           left: 162.7px;
+           top: 1195px;
+           position: absolute;
+           outline: none;
+           opacity: 0.7;
+           color: black;
+           font-size: 23px;
+           font-family: Inter, sans-serif;
+           font-weight: 500;
+           line-height: 1.4em;
+           border: none;
+           padding: 4px;
+           background: transparent;
+           resize: none;"></textarea>
+
+  
+  <div data-layer="Rectangle 14" class="Rectangle14" style="width: 267px; height: 51px; left: 329px; top: 1329px; position: absolute; background: linear-gradient(90deg, #4A3EFE 0%, #EF73DA 100%); box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.36); border-radius: 9px"></div>
+
+  <button type="submit"
+    style="width: auto;
+           height: 33px;
+           left: 373px;
+           top: 1340px;
+           position: absolute;
+           color: white;
+           font-size: 25px;
+           font-family: Inter, sans-serif;
+           font-weight: 500;
+           line-height: 30px;
+           background-color: transparent;
+           border: none;
+           cursor: posans-serif;">
+    Send Message
+  </button>
+</form>
+
+  <div data-layer="YOU CAN GET IN TOUCH WITH ME" class="YouCanGetInTouchWithMe" style="width: 549px; height: 31px; left: 466px; top: 816px; position: absolute; text-align: center; color: #4A3EFE; font-size: 32px; font-family: Tajawal; font-weight: 900; line-height: 29.44px; word-wrap: break-word">YOU CAN GET IN TOUCH WITH ME</div>
+  <div data-layer="Whatsapp" class="Whatsapp" style="width: auto; height: 38px; left: 943.69px; top: 903px; position: absolute; text-align: center; color: #4A3EFE; font-size: 22px; font-family: Poppins; font-weight: 400; line-height: 33px; word-wrap: break-word">Whatsapp</div>
+  <div data-layer="+252 612652448" class="252612652448" style="left: 943.69px; top: 926px; position: absolute; text-align: center; color: #4A3EFE; font-size: 22px; font-family: Poppins; font-weight: 700; line-height: 33px; word-wrap: break-word">+252 612652448</div>
+  <div data-svg-wrapper data-layer="Rectangle 15" class="Rectangle15" style="left: 886px; top: 908px; position: absolute">
+    <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_d_1_723)">
+    <rect x="7.90625" y="3.90625" width="38.5938" height="38.5938" rx="7" fill="#4A3EFE"/>
+    </g>
+    <defs>
+    <filter id="filter0_d_1_723" x="0.90625" y="0.90625" width="52.5938" height="52.5938" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+    <feOffset dy="4"/>
+    <feGaussianBlur stdDeviation="3.5"/>
+    <feComposite in2="hardAlpha" operator="out"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.36 0"/>
+    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_723"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_723" result="shape"/>
+    </filter>
+    </defs>
+    </svg>
+  </div>
+  <div data-svg-wrapper data-layer="Whatsapp" class="Whatsapp" style="left: 885px; top: 902px; position: absolute">
+    <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M37.2906 19.6597C34.959 17.3155 31.8543 16.0312 28.55 16.0312C21.7421 16.0312 16.1935 21.5798 16.1935 28.3878C16.1935 30.5698 16.7671 32.6895 17.8394 34.5598L16.0938 40.9688L22.6398 39.2481C24.4478 40.2331 26.4802 40.7568 28.55 40.7568C35.358 40.7568 40.9066 35.2082 40.9066 28.4003C40.9066 25.096 39.6223 21.9913 37.2906 19.6597ZM28.55 38.662C26.7047 38.662 24.8967 38.1633 23.3132 37.2281L22.9391 37.0037L19.0488 38.0261L20.0838 34.2356L19.8344 33.8491C18.8119 32.2157 18.2633 30.3204 18.2633 28.3878C18.2633 22.727 22.8768 18.1135 28.5376 18.1135C31.2807 18.1135 33.8617 19.1858 35.7944 21.131C37.7395 23.0761 38.7993 25.6571 38.7993 28.4003C38.8243 34.0611 34.2108 38.662 28.55 38.662ZM34.1859 30.9813C33.8742 30.8317 32.353 30.0835 32.0787 29.9713C31.7919 29.8716 31.5924 29.8217 31.3804 30.1209C31.1685 30.4327 30.5824 31.1309 30.4079 31.3304C30.2333 31.5424 30.0463 31.5673 29.7346 31.4052C29.4228 31.2556 28.4253 30.9189 27.2533 29.8716C26.3306 29.0486 25.7196 28.0387 25.5326 27.7269C25.358 27.4152 25.5077 27.2531 25.6698 27.091C25.8069 26.9539 25.9815 26.7294 26.1311 26.5549C26.2807 26.3803 26.3431 26.2432 26.4428 26.0437C26.5426 25.8317 26.4927 25.6571 26.4179 25.5075C26.3431 25.3579 25.7196 23.8367 25.4703 23.2133C25.2209 22.6148 24.959 22.6896 24.772 22.6771C24.585 22.6771 24.3855 22.6771 24.1735 22.6771C23.9615 22.6771 23.6373 22.7519 23.3506 23.0636C23.0763 23.3753 22.2783 24.1235 22.2783 25.6447C22.2783 27.1658 23.388 28.6372 23.5376 28.8367C23.6872 29.0486 25.7196 32.1658 28.8119 33.5C29.5475 33.8242 30.1211 34.0112 30.57 34.1483C31.3056 34.3853 31.9789 34.3478 32.5151 34.273C33.1136 34.1857 34.348 33.5249 34.5974 32.8017C34.8592 32.0785 34.8592 31.4676 34.7719 31.3304C34.6847 31.1933 34.4976 31.1309 34.1859 30.9813Z" fill="white"/>
+    </svg>
+  </div>
+  <div data-layer="Email" class="Email" style="width: auto; height: 38px; left: 944px; top: 987px; position: absolute; text-align: center; color: #4A3EFE; font-size: 22px; font-family: Poppins; font-weight: 400; line-height: 33px; word-wrap: break-word">Email</div>
+  <div data-layer="khaalidmaxamed1000@gmail.com" class="Khaalidmaxamed1000GmailCom" style="left: 944px; top: 1010px; position: absolute; text-align: center; color: #4A3EFE; font-size: 22px; font-family: Poppins; font-weight: 700; line-height: 33px; word-wrap: break-word">khaalidmaxamed1000@gmail.com</div>
+  <div data-svg-wrapper data-layer="Rectangle 15" class="Rectangle15" style="left: 892.91px; top: 996.91px; position: absolute">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0.90625" y="0.90625" width="38.5938" height="38.5938" rx="7" fill="#4A3EFE"/>
+    </svg>
+  </div>
+  <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 901px; top: 1008px; position: absolute">
+    <svg width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M20.7 0H2.3C1.035 0 0.0115 1.0125 0.0115 2.25L0 15.75C0 16.9875 1.035 18 2.3 18H20.7C21.965 18 23 16.9875 23 15.75V2.25C23 1.0125 21.965 0 20.7 0ZM20.7 4.5L11.5 10.125L2.3 4.5V2.25L11.5 7.875L20.7 2.25V4.5Z" fill="white"/>
+    </svg>
+  </div>
+  <div data-layer="Location" class="Location" style="width: auto; height: 38px; left: 944px; top: 1069px; position: absolute; text-align: center; color: #4A3EFE; font-size: 22px; font-family: Poppins; font-weight: 400; line-height: 33px; word-wrap: break-word">Location</div>
+  <div data-layer="Mogadishu-Somalia" class="MogadishuSomalia" style="left: 944px; top: 1092px; position: absolute; text-align: center; color: #4A3EFE; font-size: 22px; font-family: Poppins; font-weight: 700; line-height: 33px; word-wrap: break-word">Mogadishu-Somalia</div>
+  <div data-svg-wrapper data-layer="Rectangle 15" class="Rectangle15" style="left: 892.91px; top: 1078.91px; position: absolute">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0.90625" y="0.90625" width="38.5938" height="38.5938" rx="7" fill="#4A3EFE"/>
+    </svg>
+  </div>
+  <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 904px; top: 1086px; position: absolute">
+    <svg width="18" height="26" viewBox="0 0 18 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M9 0C4.02429 0 0 4.069 0 9.1C0 15.925 9 26 9 26C9 26 18 15.925 18 9.1C18 4.069 13.9757 0 9 0ZM9 12.35C7.22571 12.35 5.78571 10.894 5.78571 9.1C5.78571 7.306 7.22571 5.85 9 5.85C10.7743 5.85 12.2143 7.306 12.2143 9.1C12.2143 10.894 10.7743 12.35 9 12.35Z" fill="white"/>
+    </svg>
+  </div>
+  <div data-layer="Line 1" class="Line1" style="width: 463px; height: 0px; left: 884px; top: 1194px; position: absolute; outline: 1px #4A3EFE solid; outline-offset: -0.50px"></div>
+  <div data-layer="Follow Us" class="FollowUs" style="left: 886px; top: 1207px; position: absolute; text-align: center; color: #4A3EFE; font-size: 26px; font-family: Poppins; font-weight: 700; line-height: 39px; word-wrap: break-word">Follow Us </div>
+  <div data-svg-wrapper data-layer="Rectangle 16" class="Rectangle16" style="left: 889px; top: 1249px; position: absolute">
+    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_d_1_744)">
+    <rect x="7" y="3" width="42" height="42" rx="5" fill="#4A3EFE"/>
+    </g>
+    <defs>
+    <filter id="filter0_d_1_744" x="0" y="0" width="56" height="56" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+    <feOffset dy="4"/>
+    <feGaussianBlur stdDeviation="3.5"/>
+    <feComposite in2="hardAlpha" operator="out"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.36 0"/>
+    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_744"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_744" result="shape"/>
+    </filter>
+    </defs>
+    </svg>
+  </div>
+  <div data-layer="F" class="F" style="left: 899px; top: 1243px; position: absolute; text-align: center; color: #4A3EFE; font-size: 36px; font-family: Poppins; font-weight: 700; text-decoration: underline; line-height: 54px; word-wrap: break-word">F</div>
+  <div data-svg-wrapper data-layer="Facebook" class="Facebook" style="left: 900.5px; top: 1258.2px; position: absolute">
+    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M27.5 15C27.5 8.1 21.9 2.5 15 2.5C8.1 2.5 2.5 8.1 2.5 15C2.5 21.05 6.8 26.0875 12.5 27.25V18.75H10V15H12.5V11.875C12.5 9.4625 14.4625 7.5 16.875 7.5H20V11.25H17.5C16.8125 11.25 16.25 11.8125 16.25 12.5V15H20V18.75H16.25V27.4375C22.5625 26.8125 27.5 21.4875 27.5 15Z" fill="white"/>
+    </svg>
+  </div>
+  <div data-svg-wrapper data-layer="Rectangle 17" class="Rectangle17" style="left: 950px; top: 1249px; position: absolute">
+    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_d_1_749)">
+    <rect x="7" y="3" width="42" height="42" rx="5" fill="#4A3EFE"/>
+    </g>
+    <defs>
+    <filter id="filter0_d_1_749" x="0" y="0" width="56" height="56" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+    <feOffset dy="4"/>
+    <feGaussianBlur stdDeviation="3.5"/>
+    <feComposite in2="hardAlpha" operator="out"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.36 0"/>
+    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_749"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_749" result="shape"/>
+    </filter>
+    </defs>
+    </svg>
+  </div>
+  <div data-layer="X." class="X" style="width: 43px; left: 960px; top: 1244px; position: absolute; text-align: center"><span style="color: #4A3EFE; font-size: 36px; font-family: Poppins; font-weight: 700; text-decoration: underline; line-height: 54px; word-wrap: break-word">X</span><span style="color: #4A3EFE; font-size: 36px; font-family: Poppins; font-weight: 700; line-height: 54px; word-wrap: break-word">.</span></div>
+  <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 965px; top: 1260px; position: absolute">
+    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0L9.62584 14.0625L0.203878 25H2.29138L10.5478 15.4091L17.1129 25H25L14.9433 10.3092L23.8178 0H21.7367L14.0201 8.95868L7.88711 0H0ZM2.49269 1.31579H7.19598L22.5073 23.6842H17.804L2.49269 1.31579Z" fill="white"/>
+    </svg>
+  </div>
+  <div data-svg-wrapper data-layer="Rectangle 18" class="Rectangle18" style="left: 1011px; top: 1249px; position: absolute">
+    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_d_1_753)">
+    <rect x="7" y="3" width="42" height="42" rx="5" fill="#4A3EFE"/>
+    </g>
+    <defs>
+    <filter id="filter0_d_1_753" x="0" y="0" width="56" height="56" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+    <feOffset dy="4"/>
+    <feGaussianBlur stdDeviation="3.5"/>
+    <feComposite in2="hardAlpha" operator="out"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.36 0"/>
+    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_753"/>
+    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_753" result="shape"/>
+    </filter>
+    </defs>
+    </svg>
+  </div>
+  <div data-layer="TikTok" class="Tiktok" style="width: 57px; height: 57px; left: 1003px; top: 1242px; position: absolute; overflow: hidden">
+    <div data-layer="TI" class="Ti" style="width: 40px; left: 13px; top: 1px; position: absolute; text-align: center; color: #4A3EFE; font-size: 36px; font-family: Poppins; font-weight: 700; text-decoration: underline; line-height: 54px; word-wrap: break-word">TI</div>
+    <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 25px; top: 18px; position: absolute">
+      <svg width="23" height="28" viewBox="0 0 23 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6846 9.47081C17.5561 10.8079 19.8491 11.5941 22.3251 11.5941V6.831C21.856 6.831 21.3893 6.78231 20.931 6.68493V10.4339C18.455 10.4339 16.1631 9.64656 14.2905 8.31062V18.0291C14.2905 22.8907 10.3468 26.8321 5.48278 26.8321C3.66828 26.8321 1.98084 26.2834 0.57959 25.3429C2.17915 26.9769 4.40928 27.9911 6.8769 27.9911C11.7409 27.9911 15.6846 24.0497 15.6846 19.1881V9.47081ZM17.4053 4.66619C16.4493 3.62237 15.8211 2.27219 15.6846 0.779498V0.166748H14.3629C14.6954 2.06319 15.8306 3.68412 17.4053 4.66619ZM3.6564 21.613C3.12203 20.9124 2.83346 20.0562 2.83465 19.1751C2.83465 16.9509 4.63846 15.1482 6.86384 15.1482C7.27828 15.1482 7.69034 15.2112 8.08578 15.3371V10.4683C7.62384 10.4054 7.15834 10.3781 6.69165 10.3876V14.1769C6.29621 14.051 5.88415 13.9881 5.46853 13.9881C3.24315 13.9881 1.43934 15.7907 1.43934 18.0149C1.44053 19.5883 2.34184 20.9504 3.6564 21.613Z" fill="white"/>
+      </svg>
+    </div>
+    <div data-svg-wrapper data-layer="Vector" class="Vector" style="left: 22.49px; top: 18px; position: absolute">
+      <svg width="23" height="27" viewBox="0 0 23 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2902 8.31062C18.1617 9.64775 20.4547 10.4339 22.9307 10.4339V6.68493C21.5484 6.39043 20.3253 5.66843 19.405 4.665C17.8303 3.68293 16.6963 2.06319 16.3638 0.166748H12.8927V19.1881C12.8844 21.4052 11.0842 23.2007 8.86354 23.2007C7.55491 23.2007 6.39235 22.5772 5.6561 21.6118C4.34154 20.9492 3.44022 19.5871 3.44022 18.0149C3.44022 15.7907 5.24404 13.9881 7.46941 13.9881C7.89573 13.9881 8.3066 14.0546 8.69254 14.1769V10.3887C3.91404 10.4873 0.0712891 14.3894 0.0712891 19.1893C0.0712891 21.5857 1.02841 23.7576 2.58166 25.3441C3.98291 26.2846 5.67035 26.8332 7.48485 26.8332C12.3488 26.8332 16.2925 22.8919 16.2925 18.0303L16.2902 8.31062Z" fill="white"/>
+      </svg>
+    </div>
+    <div data-layer="Vector" class="Vector" style="width: 24.26px; height: 26.34px; left: 15.67px; top: 14.01px; position: absolute; background: rgba(239, 115, 218, 0)"></div>
+  </div>
+</div>
+</body>
+</html>
